@@ -1,0 +1,29 @@
+{
+  "name": "matchflix",
+  "version": "1.0.0",
+  "description": "Match with people based on netflix series",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimoW75/matchflix.git"
+  },
+  "keywords": [
+    "Matching",
+    "app"
+  ],
+  "author": "Casper, Lina, Teun, Robin en Timo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimoW75/matchflix/issues"
+  },
+  "homepage": "https://github.com/TimoW75/matchflix#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "mongoose": "^6.2.7",
+    "sass": "^1.49.9"
+  }
+}
