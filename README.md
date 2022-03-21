@@ -1,2 +1,2 @@
 # Matchflix
-![Matchflix_Glow](https://user-images.githubusercontent.com/60609760/159241167-be3ffd29-5037-4d0c-9f78-dbe0230d8d8e.svg)
+![Matchflix_glow](https://user-images.githubusercontent.com/60609760/159241689-2f3c3214-aa3d-49fe-864f-031d2e5bde17.svg)
