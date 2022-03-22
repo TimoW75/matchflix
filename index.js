@@ -7,9 +7,9 @@ const PORT = process.env.PORT || 3000
 
 
 //Database connection
-// const connectDB = require("./config/db");
-// require("dotenv").config();
-// connectDB();
+const connectDB = require("./config/db");
+require("dotenv").config();
+connectDB();
 
 
 //Express-Handlebars
