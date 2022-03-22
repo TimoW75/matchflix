@@ -3,7 +3,7 @@
 
 ## Doel van deze branch
 In deze branch wordt gewerkt aan de functie om een account te bewerken. Account bewerken komt binnen onze app op twee manieren voor.
-* Bewerken van jouw instellingen
+* Bewerken van jouw instellingen <br>
 Als je een film niet meer zo leuk vindt als eerst, kun je deze vervangen voor een andere film. 
-* Bewerken van jouw gegevens
+* Bewerken van jouw gegevens <br>
 Het is mogelijk om je gebruikersnaam of e-mailadres te wijzigen.
