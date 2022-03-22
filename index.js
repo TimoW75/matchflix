@@ -3,8 +3,8 @@ const app = express();
 const { engine } = require('express-handlebars');
 const mongoose = require('mongoose')
 const sass = require('sass')
-
 const PORT = process.env.PORT || 3000
+const series = require('./controller/series')
 
 app.engine('.hbs', engine({
     extname: '.hbs',
@@ -18,6 +18,7 @@ app.engine('.hbs', engine({
 app.get('/',  (req, res) => {
     res.render('index.hbs')
 })
+
 
 
 
