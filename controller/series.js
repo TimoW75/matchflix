@@ -1,10 +1,15 @@
 const fetch = require('node-fetch')
 
 
-// const series =  fetch('https://www.episodate.com/api/most-popular?page=1');
-// const serieLijst = series.json();
-// console.log(serieLijst)
 
-fetch('https://www.episodate.com/api/most-popular?page=1')
-  .then(response => response.json())
-  .then(data => console.log(data));
+function serieLijst() {
+    return fetch('https://www.episodate.com/api/most-popular?page=1')
+    .then(response => response.json())
+    // .then(series => console.log(series));
+}
+
+
+module.exports = serieLijst
+
+// https://www.episodate.com/api
+
