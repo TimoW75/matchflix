@@ -22,8 +22,13 @@ app.use(session({
 const { engine } = require('express-handlebars');
 app.engine('.hbs', engine({
     extname: '.hbs',
-    defaultLayout: 'main'
-  }));
+    defaultLayout: 'main',
+    runtimeOptions: {
+      allowProtoPropertiesByDefault: true,
+      allowProtoMethodsByDefault: true,
+    },
+  }
+  ));
   app.set('view engine', '.hbs');
   app.set('views', './views');
   app.use(express.static(__dirname + '/static'));
