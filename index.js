@@ -17,8 +17,7 @@ app.get('/',  (req, res) => {
     res.render('index.hbs')
 })
 
-// DIT IS EEN TEST
-app.get('/test',  (req, res) => {
+app.get('/gegevensbewerken',  (req, res) => {
   res.render('gegevens_bewerken')
 })
 
