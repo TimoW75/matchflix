@@ -4,7 +4,7 @@
   "description": "Match with people based on netflix series",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "dev": "nodemon index.js && npm run sass",
     "sass": "sass --watch sass:static/styles"
   },
