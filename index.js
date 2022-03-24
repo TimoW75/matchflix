@@ -1,8 +1,5 @@
 const express = require('express')
 const app = express();
-const PORT = process.env.PORT || 3000
-
-
 
 //Database connection
 const connectDB = require("./config/db");
@@ -32,6 +29,7 @@ const routes = require('./routes');
 app.use('/', urlencodedParser, routes);
 
 
+// console.log(serieLijst)
 
 app.listen(PORT, () => {
 	console.log(`App listening on localhost:${PORT}`);
