@@ -28,3 +28,10 @@ module.exports = {
 //https://www.episodate.com/api/most-popular?page=1
 // https://www.episodate.com/api
 
+    //  fetch('https://www.episodate.com/api/most-popular?page=1')
+    // .then(response => response.json())
+    // .then(series => console.log(series));
+
+ 
+
+

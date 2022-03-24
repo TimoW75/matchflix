@@ -1,11 +1,5 @@
 const express = require('express')
 const app = express();
-const { engine } = require('express-handlebars');
-const mongoose = require('mongoose')
-const sass = require('sass');
-const serieLijst = require('./controllers/series');
-const PORT = process.env.PORT || 3000
-
 
 //Database connection
 const connectDB = require("./config/db");
@@ -14,13 +8,14 @@ connectDB();
 
 
 //Express-Handlebars
+const { engine } = require('express-handlebars');
 app.engine('.hbs', engine({
     extname: '.hbs',
     defaultLayout: 'main'
   }));
   app.set('view engine', '.hbs');
-  app.set("views", "./views");
-  app.use(express.static(__dirname + "/static"));
+  app.set('views', './views');
+  app.use(express.static(__dirname + '/static'));
 
 
 
