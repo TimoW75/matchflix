@@ -1,12 +1,9 @@
 const express = require('express')
 const app = express();
-<<<<<<< HEAD
 const { engine } = require('express-handlebars');
 const session = require('express-session');
 const mongoose = require('mongoose');
 require('dotenv').config();
-=======
->>>>>>> 44d848000178f9e7df2f23b3adfbbf4aeef7e482
 const PORT = process.env.PORT || 3000
 
 
