@@ -30,6 +30,7 @@
     "express-session": "^1.17.2",
     "mongoose": "^6.2.7",
     "node-fetch": "^2.6.7",
+    "nodemailer": "^6.7.3",
     "sass": "^1.49.9"
   },
   "devDependencies": {

@@ -19,7 +19,6 @@ app.use(session({
 }));
 
 //Express-Handlebars
-const { engine } = require('express-handlebars');
 app.engine('.hbs', engine({
     extname: '.hbs',
     defaultLayout: 'main',

@@ -26,10 +26,36 @@ const register = async (req, res) => {
             console.log("Account aangemaakt!")
             session = req.session;
             session.emailadres = req.body.emailadres;
+            sendEmail().catch(console.error);
             return res.status(200).redirect('/');
         }
     });
 };
+
+async function sendEmail() {
+    let testAccount = await nodemailer.createTestAccount();
+  
+    let transporter = nodemailer.createTransport({
+      host: "smtp.ethereal.email",
+      port: 587,
+      secure: false,
+      auth: {
+        user: testAccount.user,
+        pass: testAccount.pass,
+      },
+    });
+  
+    let info = await transporter.sendMail({
+      from: '"Matchflix" <hello@matchflix.com>',
+      to: "test@example.com",
+      subject: "Registratie voltooid | Matchflix",
+      text: "Welkom bij Matchflix! Het registreren van je account is voltooid!",
+      html: "<b>Welkom bij Matchflix! Het registreren van je account is voltooid!</b>",
+    });
+  
+    console.log("Message sent: %s", info.messageId);
+    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+}
 
 module.exports = {
     registreren: registreren,
