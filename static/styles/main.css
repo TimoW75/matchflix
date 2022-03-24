@@ -57,6 +57,10 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+.series {
+  background-color: white;
+}
+
 body {
   background-color: aquamarine;
 }

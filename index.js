@@ -1,11 +1,13 @@
 const express = require('express')
 const app = express();
+<<<<<<< HEAD
 const { engine } = require('express-handlebars');
 const session = require('express-session');
 const mongoose = require('mongoose');
 require('dotenv').config();
+=======
+>>>>>>> 44d848000178f9e7df2f23b3adfbbf4aeef7e482
 const PORT = process.env.PORT || 3000
-
 
 
 //Database connection
@@ -20,13 +22,14 @@ app.use(session({
 }));
 
 //Express-Handlebars
+const { engine } = require('express-handlebars');
 app.engine('.hbs', engine({
     extname: '.hbs',
     defaultLayout: 'main'
   }));
   app.set('view engine', '.hbs');
-  app.set("views", "./views");
-  app.use(express.static(__dirname + "/static"));
+  app.set('views', './views');
+  app.use(express.static(__dirname + '/static'));
 
 
 
@@ -40,6 +43,7 @@ const routes = require('./routes');
 app.use('/', urlencodedParser, routes);
 
 
+// console.log(serieLijst)
 
 app.listen(PORT, () => {
 	console.log(`App listening on localhost:${PORT}`);
