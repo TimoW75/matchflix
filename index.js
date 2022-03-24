@@ -1,12 +1,10 @@
 const express = require('express')
 const app = express();
 const { engine } = require('express-handlebars');
-const req = require('express/lib/request');
 const mongoose = require('mongoose')
 const sass = require('sass');
-const serieLijst = require('./controller/series');
+const serieLijst = require('./controllers/series');
 const PORT = process.env.PORT || 3000
-
 
 
 //Database connection
@@ -35,12 +33,6 @@ const urlencodedParser = bodyParser.urlencoded({ extended: true });
 const routes = require('./routes');
 app.use('/', urlencodedParser, routes);
 
-app.get('/series', (req ,res) =>{
-  res.render('series.hbs')
-
-})
-
-serieLijst();
 
 // console.log(serieLijst)
 
