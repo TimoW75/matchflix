@@ -12,7 +12,9 @@ Install the dependencies
  npm install  
 ````
 Create a .env file
-> touch .env  
+````bash
+ touch .env  
+````
   
 Open up the .env in a text editor copy and paste the following with your database string  
 ````bash
