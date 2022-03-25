@@ -57,6 +57,11 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+button {
+  color: #fffefc;
+  background-color: #b01105;
+}
+
 .seriesGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -142,6 +147,10 @@ input:checked {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: var(--txt-color);
   margin-left: 70px;
+}
+
+.pagina_update label {
+  color: red;
 }
 
 body {
