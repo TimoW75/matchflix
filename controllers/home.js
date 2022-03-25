@@ -3,7 +3,7 @@ let session;
 
 const home = (req, res) => {
     session = req.session
-    if (!session.emailadres) {
+    if (!session.email) {
         console.log("Je moet ingelogd zijn om hier te kunnen komen.")
         res.redirect('/login')
     } else {

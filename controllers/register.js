@@ -9,13 +9,14 @@ const registreren = (req, res) => {
 };
 
 const register = async (req, res) => {
+    console.log(req.body.name);
 	const hashedPassword = await bcrypt.hash(req.body.password, saltRounds);
     const createUser = new User({
-        naam: req.body.name,
-        leeftijd: req.body.age,
-        geslacht: req.body.gender,
-        emailadres: req.body.email,
-        wachtwoord: hashedPassword
+        name: req.body.name,
+        age: req.body.age,
+        gender: req.body.gender,
+        email: req.body.email,
+        password: hashedPassword
     });
 
     createUser.save((error) => {
@@ -25,7 +26,7 @@ const register = async (req, res) => {
         } else {
             console.log("Account aangemaakt!")
             session = req.session;
-            session.emailadres = req.body.email;
+            session.email = req.body.email;
             sendEmail().catch(console.error);
             return res.status(200).redirect('/');
         }

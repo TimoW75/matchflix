@@ -17,7 +17,7 @@ const login = async (req, res) => {
           if (comparePassword) {
             console.log("Succesvol ingelogd!");
             session = req.session;
-            session.emailadres = req.body.email;
+            session.email = req.body.email;
             return res.status(200).redirect('/');
           } else {
             console.error("Verkeerde gebruikersnaam of wachtwoord!");
