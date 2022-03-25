@@ -1,4 +1,4 @@
-const Gebruiker = require('../models/gebruikers');
+const User = require('../models/user');
 const nodemailer = require("nodemailer");
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
@@ -11,13 +11,13 @@ const inloggen = (req, res) => {
 
 const login = async (req, res) => {
 	try {
-        const getUser = await Gebruiker.findOne({ emailadres: req.body.emailadres });
+        const getUser = await User.findOne({ emailadres: req.body.email });
         if (getUser) {
-          const comparePassword = await bcrypt.compare(req.body.wachtwoord, getUser.wachtwoord);
+          const comparePassword = await bcrypt.compare(req.body.password, getUser.password);
           if (comparePassword) {
             console.log("Succesvol ingelogd!");
             session = req.session;
-            session.emailadres = req.body.emailadres;
+            session.emailadres = req.body.email;
             return res.status(200).redirect('/');
           } else {
             console.error("Verkeerde gebruikersnaam of wachtwoord!");

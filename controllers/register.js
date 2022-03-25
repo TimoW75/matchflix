@@ -1,4 +1,4 @@
-const Gebruiker = require('../models/gebruikers');
+const User = require('../models/user');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
@@ -9,12 +9,12 @@ const registreren = (req, res) => {
 };
 
 const register = async (req, res) => {
-	const hashedPassword = await bcrypt.hash(req.body.wachtwoord, saltRounds);
-    const createUser = new Gebruiker({
-        naam: req.body.naam,
-        leeftijd: req.body.leeftijd,
-        geslacht: req.body.geslacht,
-        emailadres: req.body.emailadres,
+	const hashedPassword = await bcrypt.hash(req.body.password, saltRounds);
+    const createUser = new User({
+        naam: req.body.name,
+        leeftijd: req.body.age,
+        geslacht: req.body.gender,
+        emailadres: req.body.email,
         wachtwoord: hashedPassword
     });
 
@@ -25,7 +25,7 @@ const register = async (req, res) => {
         } else {
             console.log("Account aangemaakt!")
             session = req.session;
-            session.emailadres = req.body.emailadres;
+            session.emailadres = req.body.email;
             sendEmail().catch(console.error);
             return res.status(200).redirect('/');
         }
