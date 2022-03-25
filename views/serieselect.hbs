@@ -4,29 +4,24 @@
 
 <form method="post" action="series" class="seriesGrid">
 
-    <section id="theflash" class="">
-        <input type="checkbox" name="flash" id="flashBox">
-        <label for="flash" class="lazy">The flash</label>
-    </section>   
-
-    <section id="miraculousladybug" class="">
-        <input type="checkbox" name="ladybug" id="lbBox">
-        <label for="ladybug" class="lazy">Miraculous Ladybug</label>
-    </section>
+    {{#each tv_shows}} {{! voor elke item in de stijl database}}
+        <section id="{{permalink}}" class="series">
+            <img src="{{image_thumbnail_path}}">
+            <input type="checkbox" name="{{permalink}}" id="{{permalink}}Box">
+            <label for="{{permalink}}" class="lazy">{{name}}</label>
+        </section>
+    {{/each}} 
 
 
     <section class="button" class="notLoaded">    
         <button type="submit" value="Submit" id="submit">Select</button>
-    </section>
+    </section> 
 
 </form>
 
 
 
-    {{!-- {{#each serieLijst}} {{! voor elke item in de stijl database}}
-        <h1>{{serieName}}</h1>
-        <img src="{{serieImg}}">
-    {{/each}} --}}
+    
 
     
 <script src="/javascript/series.js"></script>
