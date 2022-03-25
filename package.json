@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "dev": "nodemon index.js && npm run sass",
+    "dev": "nodemon index.js & npm run sass",
     "sass": "sass --watch sass:static/styles"
   },
   "repository": {
