@@ -1,0 +1,34 @@
+<main class="pagina_update">
+
+    <h2>Profiel bijwerken</h2>
+
+    <form action="/gewijzigd" method="post">
+        <fieldset>
+            <label for='voornaam'>Voornaam</label>
+            <input type="text" id="voornaam" name="voornaam" value="{{voornaam}}">
+        </fieldset>
+        <fieldset>
+            <label for='voornaam'>Achternaam</label>
+            <input type="text" id="achternaam" name="achternaam" value="{{achternaam}}">
+        </fieldset>
+        <fieldset>
+            <label for='voornaam'>Gebruikersnaam</label>
+            <input type="text" id="gebruikersnaam" name="gebruikersnaam" value="{{gebruikersnaam}}">
+        </fieldset>
+        <fieldset>
+            <label for='voornaam'>E-mailadres</label>
+            <input type="email" id="email" name="email" value="{{email}}">
+        </fieldset>
+        <input type="submit" id='button' value="Gegevens bijwerken">
+    </form>
+
+</main>
+{{!-- {{>footer}} --}}
+
+
+{{!-- 
+regel 3: action
+regel 20: value andere naam
+regel 23: footer of header toevoegen
+algemeen: goede labels uitkiezen 
+--}}
