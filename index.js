@@ -1,16 +1,24 @@
 const express = require('express')
 const app = express();
+const { engine } = require('express-handlebars');
+const session = require('express-session');
+const mongoose = require('mongoose');
+require('dotenv').config();
 const PORT = process.env.PORT || 3000
 
 
 //Database connection
 const connectDB = require("./config/db");
-require("dotenv").config();
 connectDB();
 
+// Express-Session
+app.use(session({
+  secret: process.env.SESSION_SECRET, 
+  resave: false, 
+  saveUninitialized: true 
+}));
 
 //Express-Handlebars
-const { engine } = require('express-handlebars');
 app.engine('.hbs', engine({
     extname: '.hbs',
     defaultLayout: 'main',

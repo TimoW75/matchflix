@@ -1,7 +1,14 @@
 //const model = require('../models');
+let session;
 
 const home = (req, res) => {
-	res.render('home');
+    session = req.session
+    if (!session.email) {
+        console.log("Je moet ingelogd zijn om hier te kunnen komen.")
+        res.redirect('/login')
+    } else {
+        res.render('home');
+    }
 };
 
 
