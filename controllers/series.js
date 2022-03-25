@@ -25,7 +25,7 @@ const seriesSubmit = (req, res) => {
     let serieCheck = 0; // variable voor het bekijken of er een stijl is aangeklikt
     console.log(req.body['the-flash'])
 
-    // serieModel.exists({serieName:'The Flash'}, async  (err, doc) => { //zoeken voor serie flash in de database
+    // userSchema.exists({shows:'The Flash'}, async  (err, doc) => { //zoeken voor serie flash in de database
     //     const flashExist = doc; // variable aanmaken 
     //     if(flashExist == null & req.body['the-flash'] =='on'){ // als de serie  nog niet in de database staat en als de checkbox aangeklikt is op submit
     //         console.log('flash added')
@@ -34,8 +34,12 @@ const seriesSubmit = (req, res) => {
     //     }else{
     //         console.log('flash already in DB or not selected') // console log voor als de stijl al in de database staat of niet aangeklikt was
     //     }    
-    // });
-
+        
+        if( req.body['the-flash'] == 'on'){
+            $addToSet:{
+                shows: the-flash
+            }
+        }
     res.render('serieselect' )
 }
 
