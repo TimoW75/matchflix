@@ -1,9 +1,33 @@
 # Matchflix
+
 ![Matchflix_No_Glow](https://user-images.githubusercontent.com/60609760/159242521-5cf9800b-5134-4ef1-a91f-3c493d40de34.svg)
 
-## Doel van deze branch
-In deze branch wordt gewerkt aan de functie om een account te bewerken. Account bewerken komt binnen onze app op twee manieren voor.
-* Bewerken van jouw instellingen <br>
-Als je een film niet meer zo leuk vindt als eerst, kun je deze vervangen voor een andere film. 
-* Bewerken van jouw gegevens <br>
-Het is mogelijk om je gebruikersnaam of e-mailadres te wijzigen.
+Clone this repo with
+````bash
+git clone https://github.com/TimoW75/matchflix.git  
+cd matchflix  
+````
+Install the dependencies
+````bash
+ npm install  
+````
+Create a .env file
+````bash
+ touch .env  
+````
+  
+Open up the .env in a text editor copy and paste the following with your database string  
+````bash
+CONNECTION_STRING=<connection_string_here>
+````
+Run the server with
+````bash 
+npm start  
+````
+
+or for developing purposes with
+````bash
+npm run dev
+````
+
+and go to "localhost:/3000"  
