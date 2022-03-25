@@ -23,11 +23,14 @@
   },
   "homepage": "https://github.com/TimoW75/matchflix#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-handlebars": "^6.0.3",
+    "express-session": "^1.17.2",
     "mongoose": "^6.2.7",
     "node-fetch": "^2.6.7",
+    "nodemailer": "^6.7.3",
     "sass": "^1.49.9"
   },
   "devDependencies": {
