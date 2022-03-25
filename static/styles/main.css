@@ -72,7 +72,7 @@ button {
   height: 250px;
   width: 180px;
   border-radius: 30px;
-  margin: auto;
+  margin: 10px auto 10px auto;
 }
 .seriesGrid input {
   color: transparent;
@@ -80,34 +80,26 @@ button {
   width: 182px;
   appearance: none;
   border-radius: 30px;
-  margin: 0;
+  position: relative;
 }
 .seriesGrid label {
+  color: white;
   position: relative;
-  color: black;
+  top: -50%;
   font-size: 1.3em;
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-input:checked {
+.seriesGrid input:checked {
   opacity: 0.8;
   border-radius: 30px;
   background-color: darkgray;
   border: 4px solid green;
+  margin: 0;
 }
 
-#miraculousladybug {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/49269.jpg");
-  background-size: cover;
-}
-
-#theflash {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/35624.jpg");
-  background-size: cover;
-}
-
-.button {
+.seriesGrid .button {
   height: 250px;
   width: 250px;
   border-radius: 150px !important;
@@ -117,7 +109,7 @@ input:checked {
   top: 88%;
   left: 30%;
 }
-.button p {
+.seriesGrid .button p {
   margin-top: 10px;
   font-size: 1.5em;
   font-weight: bold;
@@ -126,7 +118,7 @@ input:checked {
   margin-top: 10px;
   top: 0;
 }
-.button #submit {
+.seriesGrid .button #submit {
   margin-top: 25px;
   height: 50px;
   text-align: center;
@@ -137,7 +129,7 @@ input:checked {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: var(--txt-color);
 }
-.button input {
+.seriesGrid .button input {
   height: 50px;
   text-align: center;
   border: none;
@@ -148,6 +140,12 @@ input:checked {
   color: var(--txt-color);
   margin-left: 70px;
 }
+
+img {
+  position: absolute;
+  width: 180px;
+  height: 250px;
+  border-radius: 30px;
 
 .pagina_update label {
   color: red;
