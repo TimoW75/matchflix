@@ -11,7 +11,7 @@ const inloggen = (req, res) => {
 
 const login = async (req, res) => {
 	try {
-        const getUser = await User.findOne({ emailadres: req.body.email });
+        const getUser = await User.findOne({ email: req.body.email });
         if (getUser) {
           const comparePassword = await bcrypt.compare(req.body.password, getUser.password);
           if (comparePassword) {
