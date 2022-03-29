@@ -1,4 +1,5 @@
-//const model = require('../models');
+const User = require('../models/user');
+
 let session;
 
 const home = (req, res) => {
@@ -7,9 +8,16 @@ const home = (req, res) => {
         console.log("Je moet ingelogd zijn om hier te kunnen komen.")
         res.redirect('/login')
     } else {
-        res.render('home');
+        User.find({
+            email: session.email
+        }).then((documents) => {
+            let name = documents.map(user => user.name);
+            res.render('home', {
+                name: name
+            });
+        })
     }
-};
+}
 
 
 module.exports = {
