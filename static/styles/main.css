@@ -62,6 +62,30 @@ button {
   background-color: #ed1c24;
 }
 
+.pagina_home * {
+  margin: 0;
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+}
+.pagina_home h2 {
+  font-size: 2em;
+  margin: 0.5em;
+}
+.pagina_home a {
+  display: inline-block;
+  border: solid 0.5px black;
+  background-color: lightgray;
+  margin: 1em;
+  padding: 1em;
+}
+.pagina_home input {
+  margin-left: 1em;
+  padding: 1em;
+  background-color: gray;
+  border: none;
+}
+
 .seriesGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -148,8 +172,26 @@ img {
   border-radius: 30px;
 }
 
+.pagina_update * {
+  margin: 0;
+  font-size: 1em;
+}
+.pagina_update h2 {
+  font-size: 2em;
+  padding: 0.5em;
+}
 .pagina_update label {
-  color: red;
+  display: block;
+}
+.pagina_update fieldset {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+.pagina_update #button {
+  margin-left: 1em;
+  padding: 1em;
+  background-color: gray;
+  border: none;
 }
 
 body {

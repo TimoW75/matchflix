@@ -15,16 +15,23 @@ let session ;
 // };
 
 const series = (req, res) => {
+    
+
+    // session = req.session
+    // if(!session.email){
+    //     res.redirect('/')
+    // }else{
+    //     User.update({email:session.email}, { $set: { shows: [] }}, function(err, affected){
+    //     console.log('affected: ', affected)
+    //     })
+    // }
+
     fetch('https://www.episodate.com/api/most-popular?page=1')
     .then(response => response.json())
     .then(series => {
     res.render('serieselect', series)
-    });   
-    User.update(
-        {$pull:{shows:["the-flash"]}}
-    )
-
-};
+    });  
+}
 
 
 const seriesSubmit = async (req, res) => {
@@ -38,9 +45,11 @@ const seriesSubmit = async (req, res) => {
         User.find({
             email: session.email
         })
-        res.redirect('/series' )
+        res.redirect('/' )
     }
     console.log(session.email)
+
+ 
 
     if (req.body['the-flash'] == 'on'){
 	    const addShows = await User.findOneAndUpdate({email: session.email}, {
@@ -193,6 +202,7 @@ const seriesSubmit = async (req, res) => {
 		    }}).lean().exec();
         console.log(addShows)
     }
+    
 }
 
 
@@ -210,16 +220,3 @@ module.exports = {
 // https://www.episodate.com/api
 
 
-
- 
-
-
-  // userSchema.exists({shows:'The Flash'}, async  (err, doc) => { //zoeken voor serie flash in de database
-    //     const flashExist = doc; // variable aanmaken 
-    //     if(flashExist == null & req.body['the-flash'] =='on'){ // als de serie  nog niet in de database staat en als de checkbox aangeklikt is op submit
-    //         console.log('flash added')
-    //         await Flash.save(); // save de flash serie naar de database
-    //         serieCheck++;
-    //     }else{
-    //         console.log('flash already in DB or not selected') // console log voor als de stijl al in de database staat of niet aangeklikt was
-    //     }    
