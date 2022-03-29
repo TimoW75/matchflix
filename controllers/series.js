@@ -220,16 +220,3 @@ module.exports = {
 // https://www.episodate.com/api
 
 
-
- 
-
-
-  // userSchema.exists({shows:'The Flash'}, async  (err, doc) => { //zoeken voor serie flash in de database
-    //     const flashExist = doc; // variable aanmaken 
-    //     if(flashExist == null & req.body['the-flash'] =='on'){ // als de serie  nog niet in de database staat en als de checkbox aangeklikt is op submit
-    //         console.log('flash added')
-    //         await Flash.save(); // save de flash serie naar de database
-    //         serieCheck++;
-    //     }else{
-    //         console.log('flash already in DB or not selected') // console log voor als de stijl al in de database staat of niet aangeklikt was
-    //     }    
