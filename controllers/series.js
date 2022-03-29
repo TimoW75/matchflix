@@ -21,7 +21,7 @@ const series = (req, res) => {
     res.render('serieselect', series)
     });   
     User.update(
-        {$pull:{shows:"the-flash"}}
+        {$pull:{shows:["the-flash"]}}
     )
 
 };
