@@ -28,7 +28,7 @@ const register = async (req, res) => {
             session = req.session;
             session.email = req.body.email;
             sendEmail().catch(console.error);
-            return res.status(200).redirect('/');
+            return res.status(200).redirect('series');
         }
     });
 };
