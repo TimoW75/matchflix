@@ -15,16 +15,23 @@ let session ;
 // };
 
 const series = (req, res) => {
+    
+
+    // session = req.session
+    // if(!session.email){
+    //     res.redirect('/')
+    // }else{
+    //     User.update({email:session.email}, { $set: { shows: [] }}, function(err, affected){
+    //     console.log('affected: ', affected)
+    //     })
+    // }
+
     fetch('https://www.episodate.com/api/most-popular?page=1')
     .then(response => response.json())
     .then(series => {
     res.render('serieselect', series)
-    });   
-    User.update(
-        {$pull:{shows:["the-flash"]}}
-    )
-
-};
+    });  
+}
 
 
 const seriesSubmit = async (req, res) => {
@@ -38,9 +45,11 @@ const seriesSubmit = async (req, res) => {
         User.find({
             email: session.email
         })
-        res.redirect('/series' )
+        res.redirect('/' )
     }
     console.log(session.email)
+
+ 
 
     if (req.body['the-flash'] == 'on'){
 	    const addShows = await User.findOneAndUpdate({email: session.email}, {
@@ -193,6 +202,7 @@ const seriesSubmit = async (req, res) => {
 		    }}).lean().exec();
         console.log(addShows)
     }
+    
 }
 
 
