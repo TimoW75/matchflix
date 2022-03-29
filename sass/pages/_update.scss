@@ -1,5 +1,29 @@
 .pagina_update {
+
+    * {
+        margin: 0;
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 2em;
+        padding: 0.5em;
+    }
+
     label {
-        color: red;
+        display: block;
+    }
+
+    fieldset {
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+
+    #button {
+        margin-left: 1em;
+        padding: 1em;
+        background-color: gray;
+        border: none;
     }
 }
+
