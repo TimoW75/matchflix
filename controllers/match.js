@@ -14,22 +14,21 @@ const matching = (req, res) => {
 		User.findOne().skip(random).exec(
 			function (err, result) {
 				if(session.email == result.email){
-					console.log("the same")
 					res.redirect("match");
 				} else {
-				const name = result.name;
-				const age = result.age;
-				const about = result.about;
-				console.log("good")
 				res.render("match", {
-					name: name,
-					age: age,
-					about: about,
+					name: result.name,
+					age: result.age,
+					about: result.about,
 				});
 			}
 			});
 	});
 };
+
+const liking = (req, res) =>{
+
+}
 
 module.exports = {
     matching: matching,

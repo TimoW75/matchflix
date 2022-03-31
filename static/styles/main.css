@@ -222,14 +222,15 @@ img {
   margin: 0.2rem;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-}
-
 .rematch_btn {
   margin-top: 2rem;
   text-align: center;
+}
+
+.like-choice_btn {
+  margin: 1.5rem;
+  padding: 0.5rem;
+  width: 4rem;
 }
 
 body {
