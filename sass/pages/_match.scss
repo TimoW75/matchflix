@@ -1,4 +1,22 @@
 .match-container{
     display: flex;
     justify-content: center;
+
+    .person-name{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    li{
+        margin: 0.2rem;
+    }
+}
+main{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rematch_btn{
+    margin-top: 2rem;
+    text-align: center;
 }
