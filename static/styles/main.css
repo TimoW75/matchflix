@@ -65,25 +65,35 @@ button {
 .pagina_home * {
   margin: 0;
   font-size: 1em;
-  color: black;
+  color: #0c0c0c;
   text-decoration: none;
+  font-family: Montserrat, sans-serif;
 }
 .pagina_home h2 {
   font-size: 2em;
   margin: 0.5em;
 }
+.pagina_home h3 {
+  font-size: 1.5em;
+  margin: 0.7em;
+}
+.pagina_home p {
+  margin: 1em;
+}
 .pagina_home a {
   display: inline-block;
-  border: solid 0.5px black;
-  background-color: lightgray;
+  border: solid 0.5px #c42020;
+  background-color: #ed1c24;
+  color: #f5f5f5;
   margin: 1em;
   padding: 1em;
 }
 .pagina_home input {
   margin-left: 1em;
   padding: 1em;
-  background-color: gray;
+  background-color: #ed1c24;
   border: none;
+  color: #f5f5f5;
 }
 
 .seriesGrid {
@@ -175,6 +185,8 @@ img {
 .pagina_update * {
   margin: 0;
   font-size: 1em;
+  font-family: Montserrat, sans-serif;
+  color: #0c0c0c;
 }
 .pagina_update h2 {
   font-size: 2em;
@@ -187,11 +199,15 @@ img {
   margin-left: 1em;
   margin-bottom: 1em;
 }
+.pagina_update input {
+  border: solid 0.01em;
+}
 .pagina_update #button {
   margin-left: 1em;
   padding: 1em;
-  background-color: gray;
+  background-color: #ed1c24;
   border: none;
+  color: #f5f5f5;
 }
 
 .match-container {
