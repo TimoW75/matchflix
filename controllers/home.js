@@ -12,8 +12,10 @@ const home = (req, res) => {
             email: session.email
         }).then((documents) => {
             let name = documents.map(user => user.name);
+            let shows = documents.map(user => user.shows);
             res.render('home', {
-                name: name
+                name: name,
+                shows: shows
             });
         })
     }
