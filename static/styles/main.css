@@ -81,7 +81,7 @@ button {
   margin: 1em;
 }
 .pagina_home a {
-  display: block;
+  display: inline-block;
   border: solid 0.5px #c42020;
   background-color: #ed1c24;
   color: #f5f5f5;
@@ -198,6 +198,9 @@ img {
 .pagina_update fieldset {
   margin-left: 1em;
   margin-bottom: 1em;
+}
+.pagina_update input {
+  border: solid 0.01em;
 }
 .pagina_update #button {
   margin-left: 1em;
