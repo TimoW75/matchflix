@@ -1,6 +1,8 @@
 .pagina_home {
     text-align: center;
 
+    text-align: center;
+    
     * {
         margin: 0;
         font-size: 1em;
@@ -9,7 +11,6 @@
         font-family: $primary-font;
         text-align: center;
         justify-content: center;
-
     }
     
 
@@ -22,7 +23,6 @@
     h3 {
         font-size: 1.5em;
         margin: 0.7em;
-
     }
 
     p {
@@ -34,7 +34,7 @@
         border: solid 0.5px $border-color;
         background-color: $btn-color;
         color: $text-color_white;
-        margin: 1em;
+        // margin: 1em;
         padding: 1em;
     }
 
