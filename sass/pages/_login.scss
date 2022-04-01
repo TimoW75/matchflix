@@ -1,6 +1,15 @@
 // Login page
+html, body {
+    height: 100%;
+}
+
 
 .pagina_login {
+    height: 100%;
+    background: rgb(120,13,13);
+    background: linear-gradient(0deg, rgba(120,13,13,1) 0%, rgba(196,101,101,1) 100%);
+    background-attachment: fixed;
+
     .errorcss {
         display: block;
         background: red;
@@ -14,4 +23,76 @@
         margin-left: auto;
     }
 
+    h1 { 
+        font-size: 3em;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        padding: 1.5em 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 2.5em 1em 1em 1em;
+        box-sizing: border-box;
+    }
+
+    .login {
+        height: calc(100% - 192px);
+    }
+
+    .register {
+        height: 100%;
+    }
+
+    input {
+        width: 100%;
+        font-family: $primary-font;
+        box-sizing: border-box;
+        margin-bottom: 1em;
+        height: 3em;
+        border: 1px solid rgb(184, 184, 184);
+        border-radius: 2em;
+        padding: 1em;
+    }
+
+    input[type=submit] {
+        background-color: rgb(196, 101, 101);
+        color: white;
+        border: none;
+        border-radius: .8em;
+        margin-top: 2em;
+        font-weight: 600;
+        font-size: 1.05em;
+    }
+
+    label {
+        display: block;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+
+        input[type=radio] {
+            width: unset;
+            margin: unset;
+            margin-right: .5em;
+        }
+    }
+
+    section:not(:first-of-type) {
+        margin-bottom: 2em;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        color: black;
+        margin-bottom: 4em;
+    }
 }
