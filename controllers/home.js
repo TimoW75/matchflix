@@ -2,7 +2,7 @@ const User = require('../models/user');
 
 let session;
 
-const home = (req, res) => {
+const home = async (req, res) => {
     session = req.session
     if (!session.email) {
         console.log("Je moet ingelogd zijn om hier te kunnen komen.")
@@ -14,11 +14,15 @@ const home = (req, res) => {
             let name = documents.map(user => user.name);
             let about = documents.map(user => user.about);
             let shows = documents.map(user => user.shows);
-            res.render('home', {
-                name: name,
-                about: about,
-                shows: shows
-            });
+            User.find({
+                email: session.email
+            }, async (err, shows) => {
+                await res.render('home', {
+                    name: name,
+                    about: about,
+                    shows: shows
+                })
+            })
         })
     }
 }
