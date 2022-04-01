@@ -11,18 +11,20 @@
 =======
 >>>>>>> ab38e17a49a4533657874ad29c5b9420213b07e6
     <h3>My profile</h3>
+
     <p>Username</p>
-    <p>About me text</p>
+    <p>About me: <br> {{about}}!</p>
+
     <a href="update">Manage profile</a>
 
 
     <h3>Your favorite shows:</h3>
-    <section class="seriesGrid"> 
-        {{#each shows}} {{! voor elke item in de stijl database}}
-            {{#each shows}}
-                <section id="{{this}}"></section>
-            {{/each}}
-        {{/each}} 
+    <section class="seriesGrid">
+        {{#each shows}}
+        {{#each shows}}
+        <section id="{{this}}"></section>
+        {{/each}}
+        {{/each}}
     </section>
 
 
