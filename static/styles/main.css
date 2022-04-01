@@ -62,6 +62,9 @@ button {
   background-color: #ed1c24;
 }
 
+.pagina_home {
+  text-align: center;
+}
 .pagina_home * {
   margin: 0;
   font-size: 1em;
@@ -196,6 +199,19 @@ button {
 #miraculous-ladybug {
   background-image: url("https://static.episodate.com/images/tv-show/thumbnail/49269.jpg");
   background-size: cover;
+}
+
+.pagina_login .errorcss {
+  display: block;
+  background: red;
+  color: white;
+  text-align: center;
+  width: 80%;
+  border-radius: 2em;
+  padding: 0.5em;
+  margin: 1em;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .seriesGrid {

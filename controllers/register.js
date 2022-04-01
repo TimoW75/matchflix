@@ -1,4 +1,5 @@
 const User = require('../models/user');
+const nodemailer = require('nodemailer');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
@@ -27,13 +28,13 @@ const register = async (req, res) => {
             console.log("Account aangemaakt!")
             session = req.session;
             session.email = req.body.email;
-            sendEmail().catch(console.error);
+            sendEmail(req.body.email).catch(console.error);
             return res.status(200).redirect('series');
         }
     });
 };
 
-async function sendEmail() {
+async function sendEmail(email) {
     let testAccount = await nodemailer.createTestAccount();
   
     let transporter = nodemailer.createTransport({
@@ -48,10 +49,10 @@ async function sendEmail() {
   
     let info = await transporter.sendMail({
       from: '"Matchflix" <hello@matchflix.com>',
-      to: "test@example.com",
+      to: email,
       subject: "Registratie voltooid | Matchflix",
-      text: "Welkom bij Matchflix! Het registreren van je account is voltooid!",
-      html: "<b>Welkom bij Matchflix! Het registreren van je account is voltooid!</b>",
+      text: "Welkom bij Matchflix, " + email + "! Het registreren van je account is voltooid!",
+      html: "<b>Welkom bij Matchflix, " + email + "! Het registreren van je account is voltooid!</b>",
     });
   
     console.log("Message sent: %s", info.messageId);
