@@ -10,15 +10,19 @@ const home = async (req, res) => {
     } else {
         User.find({
             email: session.email
-        }).then ((documents)  => {
+        }).then((documents) => {
             let name = documents.map(user => user.name);
-            User.find({email: session.email}, async (err, shows) => {
+            let about = documents.map(user => user.about);
+            let shows = documents.map(user => user.shows);
+            User.find({
+                email: session.email
+            }, async (err, shows) => {
                 await res.render('home', {
-                    shows: shows, // data doorgeven. Welke stijlen staan in de database
                     name: name,
-
+                    about: about,
+                    shows: shows
                 })
-            })            
+            })
         })
     }
 }
