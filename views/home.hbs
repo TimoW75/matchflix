@@ -7,7 +7,14 @@
     <p>About me text</p>
     <a href="update">Manage profile</a>
 
-    <p>Your favorite shows: <br> {{shows}}!</p>
+    <section class="seriesGrid"> 
+        {{#each shows}} {{! voor elke item in de stijl database}}
+            {{#each shows}}
+                <section id="{{this}}"></section>
+            {{/each}}
+        {{/each}} 
+    </section>
+
 
     <a href="series">Change series</a>
 
