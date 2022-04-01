@@ -1,1 +1,43 @@
-// Home specific styles
+.pagina_home {
+
+    * {
+        margin: 0;
+        font-size: 1em;
+        color: $text-color;
+        text-decoration: none;
+        font-family: $primary-font;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin: 0.5em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin: 0.7em;
+    }
+
+    p {
+        margin: 1em;
+    }
+
+    a {
+        display: inline-block;
+        border: solid 0.5px $border-color;
+        background-color: $btn-color;
+        color: $text-color_white;
+        margin: 1em;
+        padding: 1em;
+    }
+
+    input{
+        margin-left: 1em;
+        padding: 1em;
+        background-color: $btn-color;
+        border: none;
+        color: $text-color_white;
+    }
+
+}
+

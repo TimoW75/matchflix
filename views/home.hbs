@@ -1,7 +1,18 @@
-<h2>Hoi {{name}}!</h2>
+<main class="pagina_home">
 
-<a href="update">Profiel bewerken</a>
+    <h2>Hi {{name}}!</h2>
 
-<form action="/logout" method="post">
-    <input type="submit" value="Uitloggen">
-</form>
+    <h3>My profile</h3>
+    <p>Username</p>
+    <p>About me text</p>
+    <a href="update">Manage profile</a>
+
+    <p>Your favorite shows: <br> {{shows}}!</p>
+
+    <a href="series">Change series</a>
+
+    <form action="/logout" method="post">
+        <input type="submit" value="Log out">
+    </form>
+
+</main>
