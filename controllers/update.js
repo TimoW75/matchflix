@@ -1,5 +1,6 @@
 const User = require('../models/user');
 
+
 let session;
 
 const update = (req, res) => {
@@ -29,7 +30,7 @@ const update = (req, res) => {
 }
 
 
-const gewijzigd = async (req, res) => {
+const gewijzigd = async (req, res, next) => {
   session = req.session;
   User.updateOne({
     email: session.email
@@ -45,8 +46,7 @@ const gewijzigd = async (req, res) => {
   res.redirect('/');
 }
 
-
 module.exports = {
   update: update,
-  gewijzigd: gewijzigd
+  gewijzigd: gewijzigd,
 }

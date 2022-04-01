@@ -9,7 +9,7 @@
     "sass": "sass --watch sass:static/styles",
     "cssnano": "npx postcss static/styles/main.css > static/styles/output.css"
   },
-  "repository": {
+  "repository": { 
     "type": "git",
     "url": "git+https://github.com/TimoW75/matchflix.git"
   },
