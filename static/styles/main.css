@@ -196,6 +196,8 @@ button {
 #miraculous-ladybug {
   background-image: url("https://static.episodate.com/images/tv-show/thumbnail/49269.jpg");
   background-size: cover;
+}
+
 .pagina_login .errorcss {
   display: block;
   background: red;
