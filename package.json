@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "dev": "nodemon index.js & npm run sass",
+    "dev": "nodemon index.js & npm run sass & npm run cssnano",
     "sass": "sass --watch sass:static/styles",
     "cssnano": "npx postcss static/styles/main.css > static/styles/output.css"
   },
