@@ -65,25 +65,148 @@ button {
 .pagina_home * {
   margin: 0;
   font-size: 1em;
-  color: black;
+  color: #0c0c0c;
   text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  justify-content: center;
 }
 .pagina_home h2 {
   font-size: 2em;
   margin: 0.5em;
 }
+.pagina_home h3 {
+  font-size: 1.5em;
+  margin: 0.7em;
+}
+.pagina_home p {
+  margin: 1em;
+}
 .pagina_home a {
   display: inline-block;
-  border: solid 0.5px black;
-  background-color: lightgray;
+  border: solid 0.5px #c42020;
+  background-color: #ed1c24;
+  color: #f5f5f5;
   margin: 1em;
   padding: 1em;
 }
 .pagina_home input {
   margin-left: 1em;
   padding: 1em;
-  background-color: gray;
+  background-color: #ed1c24;
   border: none;
+  color: #f5f5f5;
+}
+
+#arrow {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/29560.jpg");
+  background-size: cover;
+}
+
+#lucifer {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/43467.com");
+  background-size: cover;
+}
+
+#supergirl {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/43234.jpg");
+  background-size: cover;
+}
+
+#the-flash {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/35624.jpg");
+  background-size: cover;
+}
+
+#game-of-thrones {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/23455.jpg");
+  background-size: cover;
+}
+
+#dcs-legends-of-tomorrow {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/46692.jpg");
+  background-size: cover;
+}
+
+#the-walking-dead {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/24010.jpg");
+  background-size: cover;
+}
+
+#montauk {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/46778.jpg");
+  background-size: cover;
+}
+
+#dragon-ball-super {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/47145.");
+  background-size: cover;
+}
+
+#boku-no-hero-academia {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/52439.jpg");
+  background-size: cover;
+}
+
+#the-100 {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/33514.jpg");
+  background-size: cover;
+}
+
+#sherlock {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/22410.jpg");
+  background-size: cover;
+}
+
+#supernatural {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/5348.jpg");
+  background-size: cover;
+}
+
+#the-big-bang-theory {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/8362.jpg");
+  background-size: cover;
+}
+
+#marvel-s-agents-of-s-h-i-e-l-d {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/31452.jpg");
+  background-size: cover;
+}
+
+#daredevil {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/37444.jpg");
+  background-size: cover;
+}
+
+#vikings {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/29977.jpg");
+  background-size: cover;
+}
+
+#gotham {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/29671.png");
+  background-size: cover;
+}
+
+#westworld {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/36210.jpg");
+  background-size: cover;
+}
+
+#miraculous-ladybug {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/49269.jpg");
+  background-size: cover;
+.pagina_login .errorcss {
+  display: block;
+  background: red;
+  color: white;
+  text-align: center;
+  width: 80%;
+  border-radius: 2em;
+  padding: 0.5em;
+  margin: 1em;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .seriesGrid {
@@ -175,6 +298,8 @@ img {
 .pagina_update * {
   margin: 0;
   font-size: 1em;
+  font-family: Montserrat, sans-serif;
+  color: #0c0c0c;
 }
 .pagina_update h2 {
   font-size: 2em;
@@ -187,11 +312,15 @@ img {
   margin-left: 1em;
   margin-bottom: 1em;
 }
+.pagina_update input {
+  border: solid 0.01em;
+}
 .pagina_update #button {
   margin-left: 1em;
   padding: 1em;
-  background-color: gray;
+  background-color: #ed1c24;
   border: none;
+  color: #f5f5f5;
 }
 
 .match-container {

@@ -1,13 +1,33 @@
 <main class="pagina_home">
 
-    <h2>Hoi {{name}}!</h2>
+    <h2>Hi {{name}}!</h2>
 
+<<<<<<< HEAD
 <a href="update">Profiel bewerken</a>
 <a href="series">serieselect</a>
 <a href="match">Match</a>
+=======
+    <h3>My profile</h3>
+    <p>Username</p>
+    <p>About me text</p>
+    <a href="update">Manage profile</a>
+
+
+    <h3>Your favorite shows:</h3>
+    <section class="seriesGrid"> 
+        {{#each shows}} {{! voor elke item in de stijl database}}
+            {{#each shows}}
+                <section id="{{this}}"></section>
+            {{/each}}
+        {{/each}} 
+    </section>
+
+
+    <a href="series">Change series</a>
+>>>>>>> 895883fb5b757c6bcb09385480b9ca378ebb2c30
 
     <form action="/logout" method="post">
-        <input type="submit" value="Uitloggen">
+        <input type="submit" value="Log out">
     </form>
 
 </main>

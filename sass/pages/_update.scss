@@ -3,6 +3,8 @@
     * {
         margin: 0;
         font-size: 1em;
+        font-family: $primary-font;
+        color: $text-color;
     }
 
     h2 {
@@ -19,11 +21,16 @@
         margin-bottom: 1em;
     }
 
+    input {
+        border: solid 0.01em;
+    }
+
     #button {
         margin-left: 1em;
         padding: 1em;
-        background-color: gray;
+        background-color: $btn-color;
         border: none;
+        color: $text-color_white;
     }
 }
 

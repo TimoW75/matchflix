@@ -5,10 +5,10 @@
     {{#each tv_shows}} {{! voor elke item in de stijl database}}
         <section id="{{permalink}}" class="series">
             <img src="{{image_thumbnail_path}}">
-            <input type="checkbox" name="{{permalink}}" id="{{permalink}}Box">
+            <input type="checkbox" name="{{permalink}}" id="{{permalink}}Box" class="checkbox">
             <label for="{{permalink}}" class="lazy"></label>
         </section>
-    {{/each}} 
+    {{/each}}   
 
 
     <section class="button" class="notLoaded">    
