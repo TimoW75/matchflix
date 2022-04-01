@@ -69,6 +69,7 @@ button {
   text-decoration: none;
   font-family: Montserrat, sans-serif;
   text-align: center;
+  justify-content: center;
 }
 .pagina_home h2 {
   font-size: 2em;
