@@ -1,8 +1,20 @@
-<h1>Inloggen</h1>
-<form action="/login" method="post">
-    <label for="email">E-mailadres:</label><br>
-    <input type="email" id="email" name="email"><br>
-    <label for="password">Wachtwoord:</label><br>
-    <input type="password" id="password" name="password"><br>
-    <input type="submit" value="Inloggen">
-</form>
+<main class="pagina_login">
+
+    <h1>Inloggen</h1>
+
+    <form action="/login" class="pe" method="post">
+        <label for="email">E-mailadres:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Wachtwoord:</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <label class="error"></label>
+
+        <input type="submit" value="Inloggen">
+    </form>
+
+    <a href="/register">Maak een account aan!</a>
+
+</main>
+
+<script src='javascript/progressive.js'></script>

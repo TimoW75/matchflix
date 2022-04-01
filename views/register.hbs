@@ -1,16 +1,26 @@
-<h1>Registreren</h1>
-<form action="/register" method="post">
-    <label for="name">Naam:</label><br>
-    <input type="text" name="name" id="name"><br>
-    <label for="age">Leeftijd:</label><br>
-    <input type="number" name="age" id="age"><br>
-    <input type="radio" id="man" name="gender" value="Man">
-    <label for="man">Man</label><br>
-    <input type="radio" id="vrouw" name="gender" value="Vrouw">
-    <label for="vrouw">Vrouw</label><br>
-    <label for="email">E-mailadres:</label><br>
-    <input type="email" id="email" name="email"><br>
-    <label for="password">Wachtwoord:</label><br>
-    <input type="password" id="password" name="password"><br>
-    <input type="submit" value="Registreren">
-</form>
+<main class="pagina_login">
+
+    <h1>Registreren</h1>
+    <form action="/register" class="pe" method="post">
+        <label for="name">Naam:</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="age">Leeftijd:</label><br>
+        <input type="number" name="age" id="age"><br>
+        <input type="radio" id="man" name="gender" value="Man">
+        <label for="man">Man</label><br>
+        <input type="radio" id="vrouw" name="gender" value="Vrouw">
+        <label for="vrouw">Vrouw</label><br>
+        <label for="email">E-mailadres:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Wachtwoord:</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <label class="error"></label>
+
+        <input type="submit" value="Registreren">
+    </form>
+    <a href="/login">Login op je account!</a>
+
+</main>
+
+<script src='javascript/progressive.js'></script>
