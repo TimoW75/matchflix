@@ -96,6 +96,19 @@ button {
   color: #f5f5f5;
 }
 
+.pagina_login .errorcss {
+  display: block;
+  background: red;
+  color: white;
+  text-align: center;
+  width: 80%;
+  border-radius: 2em;
+  padding: 0.5em;
+  margin: 1em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .seriesGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
