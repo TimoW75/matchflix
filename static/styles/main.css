@@ -351,6 +351,9 @@ button {
   border: none;
   color: #f5f5f5;
 }
+.pagina_update textarea {
+  width: 90%;
+}
 
 .match-container {
   display: flex;
