@@ -22,8 +22,7 @@ const userSchema = new mongoose.Schema({
 	about:{
 		type: String
 	},
-	shows: 
-		[{       
+	shows:[{       
 			type: String
 		}],	
 	matches:[{
