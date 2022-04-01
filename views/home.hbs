@@ -2,10 +2,6 @@
 
     <h2>Hi {{name}}!</h2>
 
-<a href="update">Profiel bewerken</a>
-<a href="series">serieselect</a>
-<a href="match">Match</a>
-
     <h3>My profile</h3>
 
     <p>Username</p>
@@ -15,12 +11,12 @@
 
 
     <h3>Your favorite shows:</h3>
-    <section class="seriesGrid">
-        {{#each shows}}
-        {{#each shows}}
-        <section id="{{this}}"></section>
-        {{/each}}
-        {{/each}}
+    <section class="seriesGrid"> 
+        {{#each shows}} {{! voor elke item in de shows database}}
+            {{#each shows}}
+                <section id="{{this}}"></section>
+            {{/each}}
+        {{/each}} 
     </section>
 
 
@@ -33,3 +29,5 @@
     </form>
 
 </main>
+
+{{>footer}}

@@ -1,5 +1,8 @@
 .pagina_home {
+    text-align: center;
 
+    text-align: center;
+    
     * {
         margin: 0;
         font-size: 1em;
@@ -8,8 +11,8 @@
         font-family: $primary-font;
         text-align: center;
         justify-content: center;
-
     }
+    
 
     h2 {
         font-size: 2em;
@@ -20,7 +23,6 @@
     h3 {
         font-size: 1.5em;
         margin: 0.7em;
-
     }
 
     p {
@@ -32,12 +34,13 @@
         border: solid 0.5px $border-color;
         background-color: $btn-color;
         color: $text-color_white;
-        margin: 1em;
+        // margin: 1em;
         padding: 1em;
     }
 
     input{
         margin-left: 1em;
+        margin-bottom:  120px; 
         padding: 1em;
         background-color: $btn-color;
         border: none;
