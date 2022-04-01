@@ -43,7 +43,6 @@
 }
 
 
-
 .seriesGrid {
     .button {
         height: 250px;
@@ -52,7 +51,7 @@
         background-color: $btn-color;
         border: 2px solid $border-color;
         position: fixed;
-        top: 88%;
+        top: 78%;
         left: 22%;
 
         p {
@@ -74,7 +73,7 @@
             font-size: 1.5em;
             font-weight: bold;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            color: $text-color_white;
+            color: $text-color_white;       
         }
 
         input {
@@ -92,9 +91,14 @@
     }
 }
 
-.seriesGrid img {
-            position: absolute;
-            width: 180px;
-            height: 250px;
-            border-radius: 30px;
-        }
+.seriesGrid img{
+    position: absolute;
+    width: 180px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+#seriesPage{
+    margin-bottom: 175px;
+
+}
