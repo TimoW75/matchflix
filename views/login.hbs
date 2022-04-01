@@ -1,19 +1,18 @@
 <main class="pagina_login">
 
-    <h1>Inloggen</h1>
+    <h1>Login</h1>
 
-    <form action="/login" class="pe" method="post">
-        <label for="email">E-mailadres:</label><br>
+    <form action="/login" class="pe login" method="post">
+        <label for="email">Email address:</label><br>
         <input type="email" id="email" name="email"><br>
-        <label for="password">Wachtwoord:</label><br>
+        <label for="password">Password:</label><br>
         <input type="password" id="password" name="password"><br>
 
         <label class="error"></label>
 
-        <input type="submit" value="Inloggen">
+        <input type="submit" value="Login">
+        <a href="/register">Create a new account!</a>
     </form>
-
-    <a href="/register">Maak een account aan!</a>
 
 </main>
 
