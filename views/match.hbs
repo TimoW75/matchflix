@@ -1,11 +1,13 @@
-
 <header>
 
 </header>
 <main>
-  <h1>Matching page</h1>
+    <h1>Matching page</h1>
     <div class="match-container">
-        <button class="like-choice_btn" type="submit" value="dislike" id="dislike">Dislike</button>
+        <form action="/dislike" method="post">
+                    <input type="text" value="{{name}}" name="dislike" hidden>
+            <input type="submit" value="Dislike">
+        </form>
         <section class="person">
             <ul>
                 <li class="person-name">{{name}}</li>
@@ -13,10 +15,14 @@
                 <li class="person-about">{{about}}</li>
             </ul>
         </section>
-        <button class="like-choice_btn" type="submit" value="like" id="like">Like</button>
+        <form action="/like" method="post">
+            <input type="text" value="{{name}}" name="like" hidden>
+            <input type="submit" value="Like">
+        </form>
+
     </div>
     <a class="rematch_btn" href="match">ReMatch</a>
 </main>
 
 
-
+<script src="/javascript/match.js"></script>

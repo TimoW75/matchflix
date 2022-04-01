@@ -5,6 +5,11 @@ let session;
 
 const matching = (req, res) => {
 	session = req.session;
+	if (!session.email) {
+        console.log("Je moet ingelogd zijn om hier te kunnen komen.")
+        res.redirect('/login')
+    } else {
+	
 	console.log(session)
 	console.log("email "+session.email)
     User.count().exec(function (err, count) {
@@ -24,10 +29,11 @@ const matching = (req, res) => {
 			}
 			});
 	});
+	};
 };
 
 const liking = (req, res) =>{
-
+	
 }
 
 module.exports = {
