@@ -10,8 +10,6 @@ const matching = (req, res) => {
         res.redirect('/login')
     } else {
 	
-	console.log(session)
-	console.log("email "+session.email)
     User.count().exec(function (err, count) {
 		// Get a random entry
 		const random = Math.floor(Math.random() * count);
