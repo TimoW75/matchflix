@@ -1,4 +1,5 @@
 .pagina_home {
+    text-align: center;
 
     text-align: center;
     
@@ -11,6 +12,7 @@
         text-align: center;
         justify-content: center;
     }
+    
 
     h2 {
         font-size: 2em;
@@ -38,6 +40,7 @@
 
     input{
         margin-left: 1em;
+        margin-bottom:  120px; 
         padding: 1em;
         background-color: $btn-color;
         border: none;

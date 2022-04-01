@@ -57,6 +57,25 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+.navbar {
+  position: fixed;
+  top: 91%;
+  width: 100%;
+  height: 150px;
+  background-color: #fffefc;
+  text-align: center;
+  border-top: 2px solid black;
+}
+.navbar a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 15px 30px 0px 30px;
+}
+.navbar img {
+  width: 60px;
+}
+
 button {
   color: #f5f5f5;
   background-color: #ed1c24;
@@ -94,6 +113,7 @@ button {
 }
 .pagina_home input {
   margin-left: 1em;
+  margin-bottom: 120px;
   padding: 1em;
   background-color: #ed1c24;
   border: none;
@@ -257,7 +277,7 @@ button {
   background-color: #ed1c24;
   border: 2px solid #c42020;
   position: fixed;
-  top: 88%;
+  top: 78%;
   left: 22%;
 }
 .seriesGrid .button p {
@@ -299,6 +319,10 @@ button {
   border-radius: 30px;
 }
 
+#seriesPage {
+  margin-bottom: 175px;
+}
+
 .pagina_update * {
   margin: 0;
   font-size: 1em;
@@ -325,6 +349,32 @@ button {
   background-color: #ed1c24;
   border: none;
   color: #f5f5f5;
+}
+.pagina_update textarea {
+  width: 90%;
+}
+
+.match-container {
+  display: flex;
+  justify-content: center;
+}
+.match-container .person-name {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.match-container li {
+  margin: 0.2rem;
+}
+
+.rematch_btn {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.like-choice_btn {
+  margin: 1.5rem;
+  padding: 0.5rem;
+  width: 4rem;
 }
 
 body {
