@@ -1,34 +1,34 @@
 <main class="pagina_update">
 
-    <h2>Profiel bijwerken</h2>
+    <h2>Manage profile</h2>
 
-    <form action="/gewijzigd" method="post">
+    <form action="/update" method="post">
         <fieldset>
-            <label for='voornaam'>Voornaam</label>
-            <input type="text" id="voornaam" name="voornaam" value="{{voornaam}}">
+            <label for='name'>Name</label>
+            <input type="text" id="name" name="name" value="{{name}}">
         </fieldset>
         <fieldset>
-            <label for='voornaam'>Achternaam</label>
-            <input type="text" id="achternaam" name="achternaam" value="{{achternaam}}">
+            <label for='age'>Age</label>
+            <input type="number" id="age" name="age" value="{{age}}">
         </fieldset>
         <fieldset>
-            <label for='voornaam'>Gebruikersnaam</label>
-            <input type="text" id="gebruikersnaam" name="gebruikersnaam" value="{{gebruikersnaam}}">
+            <label for='gender'>Gender</label>
+            <input type="text" id="gender" name="gender" value="{{gender}}">
         </fieldset>
         <fieldset>
-            <label for='voornaam'>E-mailadres</label>
+            <label for='email'>Email address</label>
             <input type="email" id="email" name="email" value="{{email}}">
         </fieldset>
-        <input type="submit" id='button' value="Gegevens bijwerken">
+        <fieldset>
+            <label for='about'>About</label>
+            <textarea rows="5" cols="40">{{about}}</textarea>
+        </fieldset>
+
+        <input type="submit" id='button' value="Save">
     </form>
 
 </main>
-{{!-- {{>footer}} --}}
+
+{{>footer}}
 
 
-{{!-- 
-regel 3: action
-regel 20: value andere naam
-regel 23: footer of header toevoegen
-algemeen: goede labels uitkiezen 
---}}
