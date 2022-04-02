@@ -1,5 +1,44 @@
 .pagina_update {
+
+    * {
+        margin: 0;
+        font-size: 1em;
+        font-family: $primary-font;
+        color: $text-color;
+    }
+
+    h2 {
+        font-size: 2em;
+        padding: 0.5em;
+    }
+
+    fieldset {
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
     label {
-        color: red;
+        display: block;
+        // margin-left: 2em;
+    }
+
+    input {
+        border: solid 0.01em;
+    }
+
+    #button {
+        margin-left: 1em;
+        padding: 1em;
+        background-color: $btn-color;
+        border-radius: 30px;
+        border: none;
+        color: $text-color_white;
+    }
+
+    textarea {
+        width: 90%;
+        resize: none;
+        border: solid 0.01em;
+
     }
 }

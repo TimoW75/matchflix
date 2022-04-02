@@ -1,19 +1,28 @@
-
 <header>
 
 </header>
 <main>
-  <h1>Matching page</h1>
-    <div class="profile-container">
+    <h1>Matching page</h1>
+    <div class="match-container">
+        <form action="/dislike" method="post">
+                    <input type="text" value="{{name}}" name="dislike" hidden>
+            <input type="submit" value="Dislike">
+        </form>
         <section class="person">
             <ul>
                 <li class="person-name">{{name}}</li>
-                <li class="person-age">{{age}}</li>
+                <li class="person-age">Age: {{age}}</li>
                 <li class="person-about">{{about}}</li>
             </ul>
         </section>
+        <form action="/like" method="post">
+            <input type="text" value="{{name}}" name="like" hidden>
+            <input type="submit" value="Like">
+        </form>
+
     </div>
+    <a class="rematch_btn" href="match">ReMatch</a>
 </main>
 
 
-
+<script src="/javascript/match.js"></script>
