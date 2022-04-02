@@ -8,6 +8,7 @@ const logout = require('./logout');
 const series = require('./series');
 const match = require('./match');
 const update = require('./update');
+const chat = require('./chat');
 
 
 router.use('/', home);
@@ -17,6 +18,7 @@ router.use('/logout', logout);
 router.use('/series', series);
 router.use('/match', match);
 router.use('/update', update);
+router.use('/chat', chat);
 
 
 module.exports = router;
