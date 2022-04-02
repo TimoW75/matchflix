@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon index.js",
     "dev": "nodemon index.js & npm run sass",
-    "sass": "sass --watch sass:static/styles"
+    "sass": "sass --watch sass:static/styles",
+    "cssnano": "npx postcss static/styles/main.css > static/styles/output.css"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,9 @@
     "socket.io": "^4.4.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "cssnano": "^5.1.6",
+    "nodemon": "^2.0.15",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0"
   }
 }

@@ -57,9 +57,262 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+.navbar {
+  position: fixed;
+  top: 91%;
+  width: 100%;
+  height: 150px;
+  background-color: #ed1c24;
+  text-align: center;
+  border-top: 2px solid black;
+}
+.navbar a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 10px 30px 0px 30px;
+  color: #0c0c0c;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+.navbar img {
+  width: 50px;
+}
+
 button {
-  color: #fffefc;
-  background-color: #b01105;
+  color: #f5f5f5;
+  background-color: #ff5148;
+}
+
+.pagina_home {
+  text-align: center;
+  text-align: center;
+}
+.pagina_home * {
+  margin: 0;
+  font-size: 1em;
+  color: #0c0c0c;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  justify-content: center;
+}
+.pagina_home h2 {
+  font-size: 2em;
+  margin: 1em;
+}
+.pagina_home p {
+  margin: 0em;
+}
+.pagina_home a {
+  display: inline-block;
+  background-color: #ff5148;
+  border-radius: 30px;
+  color: #f5f5f5;
+  margin: 1em;
+  padding: 1em;
+}
+.pagina_home input {
+  margin-left: 1em;
+  margin-bottom: 120px;
+  padding: 1em;
+  background-color: #ff5148;
+  border: none;
+  color: #f5f5f5;
+  border-radius: 30px;
+}
+.pagina_home .gegevens {
+  margin: 3em;
+}
+.pagina_home .gegevens .about {
+  margin-top: 2em;
+  text-decoration: underline;
+}
+
+#arrow {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/29560.jpg");
+  background-size: cover;
+}
+
+#lucifer {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/43467.com");
+  background-size: cover;
+}
+
+#supergirl {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/43234.jpg");
+  background-size: cover;
+}
+
+#the-flash {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/35624.jpg");
+  background-size: cover;
+}
+
+#game-of-thrones {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/23455.jpg");
+  background-size: cover;
+}
+
+#dcs-legends-of-tomorrow {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/46692.jpg");
+  background-size: cover;
+}
+
+#the-walking-dead {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/24010.jpg");
+  background-size: cover;
+}
+
+#montauk {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/46778.jpg");
+  background-size: cover;
+}
+
+#dragon-ball-super {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/47145.");
+  background-size: cover;
+}
+
+#boku-no-hero-academia {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/52439.jpg");
+  background-size: cover;
+}
+
+#the-100 {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/33514.jpg");
+  background-size: cover;
+}
+
+#sherlock {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/22410.jpg");
+  background-size: cover;
+}
+
+#supernatural {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/5348.jpg");
+  background-size: cover;
+}
+
+#the-big-bang-theory {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/8362.jpg");
+  background-size: cover;
+}
+
+#marvel-s-agents-of-s-h-i-e-l-d {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/31452.jpg");
+  background-size: cover;
+}
+
+#daredevil {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/37444.jpg");
+  background-size: cover;
+}
+
+#vikings {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/29977.jpg");
+  background-size: cover;
+}
+
+#gotham {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/29671.png");
+  background-size: cover;
+}
+
+#westworld {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/36210.jpg");
+  background-size: cover;
+}
+
+#miraculous-ladybug {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/49269.jpg");
+  background-size: cover;
+}
+
+html, body {
+  height: 100%;
+}
+
+.pagina_login {
+  height: 100%;
+  background: #780d0d;
+  background: linear-gradient(0deg, #780d0d 0%, #c46565 100%);
+  background-attachment: fixed;
+}
+.pagina_login .errorcss {
+  display: block;
+  background: red;
+  color: white;
+  text-align: center;
+  width: 80%;
+  border-radius: 2em;
+  padding: 0.5em;
+  margin: 1em;
+  margin-right: auto;
+  margin-left: auto;
+}
+.pagina_login h1 {
+  font-size: 3em;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 1.5em 0;
+}
+.pagina_login form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2.5em 1em 1em 1em;
+  box-sizing: border-box;
+}
+.pagina_login .login {
+  height: calc(100% - 192px);
+}
+.pagina_login .register {
+  height: 100%;
+}
+.pagina_login input {
+  width: 100%;
+  font-family: Montserrat, sans-serif;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  height: 3em;
+  border: 1px solid #b8b8b8;
+  border-radius: 2em;
+  padding: 1em;
+}
+.pagina_login input[type=submit] {
+  background-color: #c46565;
+  color: white;
+  border: none;
+  border-radius: 0.8em;
+  margin-top: 2em;
+  font-weight: 600;
+  font-size: 1.05em;
+}
+.pagina_login label {
+  display: block;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.pagina_login section {
+  display: flex;
+  align-items: center;
+}
+.pagina_login section input[type=radio] {
+  width: unset;
+  margin: unset;
+  margin-right: 0.5em;
+}
+.pagina_login section:not(:first-of-type) {
+  margin-bottom: 2em;
+}
+.pagina_login a {
+  display: block;
+  text-align: center;
+  color: black;
+  margin-bottom: 4em;
 }
 
 .seriesGrid {
@@ -83,7 +336,7 @@ button {
   position: relative;
 }
 .seriesGrid label {
-  color: white;
+  color: #0c0c0c;
   position: relative;
   top: -50%;
   font-size: 1.3em;
@@ -94,7 +347,7 @@ button {
 .seriesGrid input:checked {
   opacity: 0.8;
   border-radius: 30px;
-  background-color: darkgray;
+  background-color: #fffefc;
   border: 4px solid green;
   margin: 0;
 }
@@ -103,10 +356,9 @@ button {
   height: 250px;
   width: 250px;
   border-radius: 150px !important;
-  background-color: gray;
-  border: 2px solid #d9d9d9;
+  background-color: #ff5148;
   position: fixed;
-  top: 88%;
+  top: 78%;
   left: 22%;
 }
 .seriesGrid .button p {
@@ -114,7 +366,7 @@ button {
   font-size: 1.5em;
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: var(--txt-color);
+  color: #0c0c0c;
   margin-top: 10px;
   top: 0;
 }
@@ -127,7 +379,7 @@ button {
   font-size: 1.5em;
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: var(--txt-color);
+  color: #f5f5f5;
 }
 .seriesGrid .button input {
   height: 50px;
@@ -137,19 +389,76 @@ button {
   font-size: 1.5em;
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: var(--txt-color);
+  color: #0c0c0c;
   margin-left: 70px;
 }
 
-img {
+.seriesGrid img {
   position: absolute;
   width: 180px;
   height: 250px;
   border-radius: 30px;
 }
 
+#seriesPage {
+  margin-bottom: 175px;
+}
+
+.pagina_update * {
+  margin: 0;
+  font-size: 1em;
+  font-family: Montserrat, sans-serif;
+  color: #0c0c0c;
+}
+.pagina_update h2 {
+  font-size: 2em;
+  padding: 0.5em;
+}
+.pagina_update fieldset {
+  margin-bottom: 1em;
+  text-align: center;
+}
 .pagina_update label {
-  color: red;
+  display: block;
+}
+.pagina_update input {
+  border: solid 0.01em;
+}
+.pagina_update #button {
+  margin-left: 1em;
+  padding: 1em;
+  background-color: #ff5148;
+  border-radius: 30px;
+  border: none;
+  color: #f5f5f5;
+}
+.pagina_update textarea {
+  width: 90%;
+  resize: none;
+  border: solid 0.01em;
+}
+
+.match-container {
+  display: flex;
+  justify-content: center;
+}
+.match-container .person-name {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.match-container li {
+  margin: 0.2rem;
+}
+
+.rematch_btn {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.like-choice_btn {
+  margin: 1.5rem;
+  padding: 0.5rem;
+  width: 4rem;
 }
 
 body {
