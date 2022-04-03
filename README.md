@@ -36,10 +36,10 @@ and go to "localhost:/3000"
 # Most important commits for evaluation:
 
 Casper:
-    *
+*
 
 Teun:
-    *
+*
 
 Timo:
 * `commit 45a754d9bb6a54a150263b794ead7279187ce05b`: Added the series.js file and series API. Added the series.hbs file with test variables.
@@ -53,7 +53,7 @@ Timo:
 * `commit a4a7e97ef97f03cec44236daea31a8bef513dc84`: Added `postcss and cssnano`, config file and run command.
 
 Lina:
-    *
+*
 
 Robin:
 *
