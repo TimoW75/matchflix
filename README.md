@@ -50,7 +50,7 @@ Timo:
 * <B>commit a5efa9e59f92b7c4c117c45fd198d749c19570a5</B>: Added function to replace the add show to array function with help from Teun.
 * <B>commit a3d2b4b954bd338c78c3e900cd9abf593c295c1</B>: Created the navigation bar in the footer.
 * <B>commit b9f6586b95c7a4d8e9623e9067433a0668a92a31</B>: Small styling changes to the footer.
-* <B>commit a4a7e97ef97f03cec44236daea31a8bef513dc84</B>: Added `postcss and cssnano`, config file and run command.
+* `commit a4a7e97ef97f03cec44236daea31a8bef513dc84`: Added `postcss and cssnano`, config file and run command.
 
 Lina:
     *
