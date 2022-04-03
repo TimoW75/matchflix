@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "dev": "nodemon index.js & npm run sass",
-    "sass": "sass --watch sass:static/styles",
-    "cssnano": "npx postcss static/styles/main.css > static/styles/output.css"
+    "dev": "nodemon index.js & npm run sass & gulp watch",
+    "sass": "sass --watch sass:static/styles"
   },
   "repository": {
     "type": "git",
@@ -36,6 +35,11 @@
   },
   "devDependencies": {
     "cssnano": "^5.1.6",
+    "gulp": "^4.0.2",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
     "nodemon": "^2.0.15",
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0"
