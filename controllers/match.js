@@ -30,9 +30,6 @@ const matching = (req, res) => {
 	};
 };
 
-const liking = (req, res) =>{
-	
-}
 
 module.exports = {
     matching: matching,
