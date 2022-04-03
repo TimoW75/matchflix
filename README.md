@@ -38,7 +38,7 @@ and go to "localhost:/3000"
 Casper:
     *
 
-Casper:
+Teun:
     *
 
 Timo:
