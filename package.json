@@ -8,7 +8,7 @@
     "dev": "nodemon index.js & npm run sass & gulp watch",
     "sass": "sass --watch sass:static/styles"
   },
-  "repository": {
+  "repository": { 
     "type": "git",
     "url": "git+https://github.com/TimoW75/matchflix.git"
   },
@@ -31,7 +31,8 @@
     "mongoose": "^6.2.7",
     "node-fetch": "^2.6.7",
     "nodemailer": "^6.7.3",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "socket.io": "^4.4.1"
   },
   "devDependencies": {
     "cssnano": "^5.1.6",
@@ -43,5 +44,9 @@
     "nodemon": "^2.0.15",
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0"
+  },
+  "engines": {
+    "node": "v16.14.0",
+    "npm": "v8.3.1"
   }
 }
