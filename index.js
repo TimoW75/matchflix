@@ -5,8 +5,8 @@ const { engine } = require('express-handlebars');
 const session = require('express-session');
 const mongoose = require('mongoose');
 const server = http.createServer(app);
-// const { Server } = require('socket.io');
-// const io = new Server(server);
+const { Server } = require('socket.io');
+const io = new Server(server);
 require('dotenv').config();
 const PORT = process.env.PORT || 3000
 
@@ -48,11 +48,11 @@ const routes = require('./routes');
 app.use('/', urlencodedParser, routes);
 
 //Socket.io
-// io.on('connection', (socket) => {
-//   socket.on('chat message', (msg) => {
-//     io.emit('chat message', msg);
-//   });
-// });
+io.on('connection', (socket) => {
+  socket.on('chat message', (msg) => {
+    io.emit('chat message', msg);
+  });
+});
 
 
 // console.log(serieLijst)
