@@ -1,8 +1,12 @@
 const express = require('express')
 const app = express();
+const http = require('http');
 const { engine } = require('express-handlebars');
 const session = require('express-session');
 const mongoose = require('mongoose');
+const server = http.createServer(app);
+const { Server } = require('socket.io');
+const io = new Server(server);
 require('dotenv').config();
 const PORT = process.env.PORT || 3000
 
@@ -43,9 +47,16 @@ const urlencodedParser = bodyParser.urlencoded({ extended: true });
 const routes = require('./routes');
 app.use('/', urlencodedParser, routes);
 
+//Socket.io
+io.on('connection', (socket) => {
+  socket.on('chat message', (msg) => {
+    io.emit('chat message', msg);
+  });
+});
+
 
 // console.log(serieLijst)
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
 	console.log(`App listening on localhost:${PORT}`);
 });
