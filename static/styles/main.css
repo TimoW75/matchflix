@@ -62,7 +62,7 @@ body {
   top: 91%;
   width: 100%;
   height: 150px;
-  background-color: #ed1c24;
+  background-color: #ff5148;
   text-align: center;
   border-top: 2px solid black;
 }
@@ -86,7 +86,6 @@ button {
 }
 
 .pagina_home {
-  text-align: center;
   text-align: center;
 }
 .pagina_home * {
