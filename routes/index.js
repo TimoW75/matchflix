@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const home = require('./home');
+const error = require('./404');
 const login = require('./login');
 const register = require('./register');
 const logout = require('./logout');
@@ -25,6 +26,8 @@ router.use('/chat', chat);
 router.use('/like', like);
 router.use('/dislike', dislike);
 router.use('/matchList', matchList);
+router.use('*', error);
+
 
 
 
