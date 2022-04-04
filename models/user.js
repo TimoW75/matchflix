@@ -4,12 +4,18 @@ const mongoose = require("mongoose");
 const userSchema = new mongoose.Schema({
 	name:{
 		type: String,
+		required: true
 	},
 	age: {
 		type: Number,
+		required: true
 	},
     gender: {
         type: String,
+		enum: {
+			values: ['Man', 'Woman', 'Other'],
+			message: '{VALUE} is not a valid gender'
+		}
     },
     email: {
         type: String,
@@ -18,6 +24,7 @@ const userSchema = new mongoose.Schema({
     },
     password: {
         type: String,
+		required: true,
     },
 	about:{
 		type: String

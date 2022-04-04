@@ -111,10 +111,23 @@ input[type=submit] {
   font-size: 2em;
   margin: 1em;
 }
+.pagina_home h3 {
+  font-size: 1.5em;
+  margin: 1em;
+}
 .pagina_home p {
   margin: 0em;
 }
-.pagina_home a {
+.pagina_home .manage {
+  display: inline-block;
+  background-color: #c46565;
+  border-radius: 30px;
+  color: #f5f5f5;
+  margin-top: 0;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+.pagina_home .change {
   display: inline-block;
   background-color: #c46565;
   border-radius: 30px;
@@ -443,13 +456,14 @@ body {
 }
 
 #form {
-  padding: 0.25rem;
+  padding: 0.7rem;
   position: fixed;
-  bottom: 0;
+  bottom: -1rem;
   left: 0;
   right: 0;
   display: flex;
   height: 3rem;
+  background-color: #F7F7F7;
 }
 #form > button {
   border: none;
@@ -474,12 +488,17 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  right: 0;
   position: fixed;
   bottom: 150px;
   overflow-y: scroll;
 }
 #messages > li {
   padding: 0.5rem 1rem;
+  color: white;
+  background-color: #333333;
+  border-radius: 1rem 1rem 0 1rem;
+  margin-bottom: 1rem;
 }
 
 .chatBar {
@@ -516,25 +535,36 @@ body {
   width: 6rem;
 }
 
+.pagina_404 {
+  text-align: center;
+}
 .pagina_404 * {
   margin: 0;
   font-size: 1em;
-  font-family: Montserrat, sans-serif;
   color: #0c0c0c;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  justify-content: center;
 }
 .pagina_404 h2 {
   font-size: 2em;
-  padding: 0.5em;
+  margin: 1em;
 }
-.pagina_404 #button {
-  margin-left: 1em;
-  padding: 1em;
+.pagina_404 p {
+  margin: 0em;
+}
+.pagina_404 .terug {
+  display: inline-block;
   background-color: #c46565;
   border-radius: 30px;
-  border: none;
   color: #f5f5f5;
+  margin-top: 2em;
+  padding: 1em;
 }
 
 body {
   background-color: #fffefc;
 }
+
+/*# sourceMappingURL=main.css.map */
