@@ -1,0 +1,24 @@
+.pagina_404 {
+
+    * {
+        margin: 0;
+        font-size: 1em;
+        font-family: $primary-font;
+        color: $text-color;
+    }
+
+    h2 {
+        font-size: 2em;
+        padding: 0.5em;
+    }
+
+    #button {
+        margin-left: 1em;
+        padding: 1em;
+        background-color: $btn-color;
+        border-radius: 30px;
+        border: none;
+        color: $text-color_white;
+    }
+
+}
