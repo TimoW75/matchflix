@@ -474,6 +474,9 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: fixed;
+  bottom: 150px;
+  overflow-y: scroll;
 }
 #messages > li {
   padding: 0.5rem 1rem;
