@@ -17,6 +17,14 @@
         </form>
 
     </div>
+    <ul class="match-series">
+        {{#each shows}} {{! voor elke item in de shows database}}
+        <li>
+            <section id="{{this}}"></section>
+        </li>
+        {{/each}}
+    </ul>
+
 </main>
 
 {{>footer}}

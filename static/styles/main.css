@@ -1,8 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
+#arrow {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/29560.jpg");
+  background-size: cover;
+}
+
+#lucifer {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/43467.com");
+  background-size: cover;
+}
+
+#supergirl {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/43234.jpg");
+  background-size: cover;
+}
+
+#the-flash {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/35624.jpg");
+  background-size: cover;
+}
+
+#game-of-thrones {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/23455.jpg");
+  background-size: cover;
+}
+
+#dcs-legends-of-tomorrow {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/46692.jpg");
+  background-size: cover;
+}
+
+#the-walking-dead {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/24010.jpg");
+  background-size: cover;
+}
+
+#montauk {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/46778.jpg");
+  background-size: cover;
+}
+
+#dragon-ball-super {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/47145.");
+  background-size: cover;
+}
+
+#boku-no-hero-academia {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/52439.jpg");
+  background-size: cover;
+}
+
+#the-100 {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/33514.jpg");
+  background-size: cover;
+}
+
+#sherlock {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/22410.jpg");
+  background-size: cover;
+}
+
+#supernatural {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/5348.jpg");
+  background-size: cover;
+}
+
+#the-big-bang-theory {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/8362.jpg");
+  background-size: cover;
+}
+
+#marvel-s-agents-of-s-h-i-e-l-d {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/31452.jpg");
+  background-size: cover;
+}
+
+#daredevil {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/37444.jpg");
+  background-size: cover;
+}
+
+#vikings {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/29977.jpg");
+  background-size: cover;
+}
+
+#gotham {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/29671.png");
+  background-size: cover;
+}
+
+#westworld {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/36210.jpg");
+  background-size: cover;
+}
+
+#miraculous-ladybug {
+  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/49269.jpg");
+  background-size: cover;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -150,106 +250,6 @@ input[type=submit] {
 .pagina_home .gegevens .about {
   margin-top: 2em;
   text-decoration: underline;
-}
-
-#arrow {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/29560.jpg");
-  background-size: cover;
-}
-
-#lucifer {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/43467.com");
-  background-size: cover;
-}
-
-#supergirl {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/43234.jpg");
-  background-size: cover;
-}
-
-#the-flash {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/35624.jpg");
-  background-size: cover;
-}
-
-#game-of-thrones {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/23455.jpg");
-  background-size: cover;
-}
-
-#dcs-legends-of-tomorrow {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/46692.jpg");
-  background-size: cover;
-}
-
-#the-walking-dead {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/24010.jpg");
-  background-size: cover;
-}
-
-#montauk {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/46778.jpg");
-  background-size: cover;
-}
-
-#dragon-ball-super {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/47145.");
-  background-size: cover;
-}
-
-#boku-no-hero-academia {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/52439.jpg");
-  background-size: cover;
-}
-
-#the-100 {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/33514.jpg");
-  background-size: cover;
-}
-
-#sherlock {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/22410.jpg");
-  background-size: cover;
-}
-
-#supernatural {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/5348.jpg");
-  background-size: cover;
-}
-
-#the-big-bang-theory {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/8362.jpg");
-  background-size: cover;
-}
-
-#marvel-s-agents-of-s-h-i-e-l-d {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/31452.jpg");
-  background-size: cover;
-}
-
-#daredevil {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/37444.jpg");
-  background-size: cover;
-}
-
-#vikings {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/29977.jpg");
-  background-size: cover;
-}
-
-#gotham {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/29671.png");
-  background-size: cover;
-}
-
-#westworld {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/36210.jpg");
-  background-size: cover;
-}
-
-#miraculous-ladybug {
-  background-image: url("https://static.episodate.com/images/tv-show/thumbnail/49269.jpg");
-  background-size: cover;
 }
 
 html, body {
@@ -514,6 +514,9 @@ body {
   position: relative;
   top: 1rem;
 }
+.match-container .person {
+  max-width: 80vw;
+}
 .match-container .person-name {
   font-weight: 700;
   font-size: 2rem;
@@ -522,17 +525,33 @@ body {
   margin: 0.2rem;
 }
 .match-container form {
-  margin: 1.5rem;
+  margin: 1.5rem 0.5rem 1.5rem 0.5rem;
 }
 
-.rematch_btn {
-  margin-top: 2rem;
-  text-align: center;
+input[type=submit] {
+  margin-top: 0;
 }
 
 .like-choice_btn {
   padding: 1rem;
   width: 6rem;
+}
+
+.match-series {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80vw;
+}
+.match-series section {
+  height: 139px;
+  width: 100px;
+  border-radius: 1rem;
+  margin: 0.4rem;
+  background-size: cover;
 }
 
 .pagina_404 {
@@ -566,5 +585,3 @@ body {
 body {
   background-color: #fffefc;
 }
-
-/*# sourceMappingURL=main.css.map */
