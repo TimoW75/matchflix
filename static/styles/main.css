@@ -440,7 +440,6 @@ html, body {
 
 body {
   margin: 0;
-  padding-bottom: 3rem;
 }
 
 #form {
@@ -480,9 +479,18 @@ body {
   padding: 0.5rem 1rem;
 }
 
+.chatBar {
+  margin-bottom: 100px;
+}
+.chatBar input {
+  background-color: #d8d8d8;
+}
+
 .match-container {
   display: flex;
   justify-content: center;
+  position: relative;
+  top: 1rem;
 }
 .match-container .person-name {
   font-weight: 700;
@@ -490,6 +498,9 @@ body {
 }
 .match-container li {
   margin: 0.2rem;
+}
+.match-container form {
+  margin: 1.5rem;
 }
 
 .rematch_btn {
@@ -499,7 +510,7 @@ body {
 
 .like-choice_btn {
   padding: 1rem;
-  margin: 1.5rem;
+  width: 6rem;
 }
 
 body {
