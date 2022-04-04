@@ -3,3 +3,13 @@ button{
     color: $text-color_white;
     background-color: $btn-color;
 }
+
+input[type=submit] {
+    background-color: rgb(196, 101, 101);
+    color: white;
+    border: none;
+    border-radius: .8em;
+    margin-top: 2em;
+    font-weight: 600;
+    font-size: 1.05em;
+}
