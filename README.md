@@ -121,7 +121,6 @@
  <h2>📄 License & usage of our code</h2>
  <p>Our project is licensed under the MIT License, you are free to make us of our code as long as you follow the guidelines stated in this license</p>
 </section>
-and go to "localhost:/3000"  
 
 
 
