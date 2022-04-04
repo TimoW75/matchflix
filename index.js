@@ -55,11 +55,6 @@ io.on('connection', (socket) => {
 });
 
 
-// 404 pagina
-app.get('*', (req, res) => {
-  res.status(404).render('404');
-});
-
 
 // console.log(serieLijst)
 
