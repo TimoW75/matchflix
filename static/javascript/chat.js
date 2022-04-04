@@ -1,9 +1,10 @@
-var socket = io();
+const socket = io();
+//id's pakken en omzetten in 
+const messages = document.getElementById('messages');
+const form = document.getElementById('form');
+const input = document.getElementById('input');
 
-var messages = document.getElementById('messages');
-var form = document.getElementById('form');
-var input = document.getElementById('input');
-
+//Check of er een bericht getypt is als je op submit klikt
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   if (input.value) {
@@ -11,9 +12,9 @@ form.addEventListener('submit', function(e) {
     input.value = '';
   }
 });
-
+//Bericht toevoegen doormiddel van een li aan te maken
 socket.on('chat message', function(msg) {
-  var item = document.createElement('li');
+  const item = document.createElement('li');
   item.textContent = msg;
   messages.appendChild(item);
   window.scrollTo(0, document.body.scrollHeight);

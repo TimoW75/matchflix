@@ -456,13 +456,14 @@ body {
 }
 
 #form {
-  padding: 0.25rem;
+  padding: 0.7rem;
   position: fixed;
-  bottom: 0;
+  bottom: -1rem;
   left: 0;
   right: 0;
   display: flex;
   height: 3rem;
+  background-color: #F7F7F7;
 }
 #form > button {
   border: none;
@@ -487,12 +488,17 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  right: 0;
   position: fixed;
   bottom: 150px;
   overflow-y: scroll;
 }
 #messages > li {
   padding: 0.5rem 1rem;
+  color: white;
+  background-color: #333333;
+  border-radius: 1rem 1rem 0 1rem;
+  margin-bottom: 1rem;
 }
 
 .chatBar {
@@ -560,3 +566,5 @@ body {
 body {
   background-color: #fffefc;
 }
+
+/*# sourceMappingURL=main.css.map */
