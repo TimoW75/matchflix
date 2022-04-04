@@ -71,15 +71,7 @@
  <li><a href="https://github.com/TimoW75/matchflix/commit/a3d2b4b954bd338c78c3e900cd9abf593c295c15">a3d2b4b</a>: Created the navigation bar in the footer.</li>
  <li><a href="https://github.com/TimoW75/matchflix/commit/b9f6586b95c7a4d8e9623e9067433a0668a92a31">b9f6586</a>: Small styling changes to the footer..</li>
  <li><a href="https://github.com/TimoW75/matchflix/commit/a4a7e97ef97f03cec44236daea31a8bef513dc84">a4a7e97</a>: Added `postcss and cssnano`, config file and run command.</li>
-
-
-
-
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
- </ul>
+</ul>
  
  <h3>Teun</h3>
  <ul>
