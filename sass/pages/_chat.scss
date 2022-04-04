@@ -1,6 +1,5 @@
 body {
 	margin: 0;
-	padding-bottom: 3rem;
 }
 #form {
 	padding: 0.25rem;
@@ -34,5 +33,13 @@ body {
 	padding: 0;
 	>li {
 		padding: 0.5rem 1rem;
+	}
+}
+
+.chatBar{
+	margin-bottom: 100px;
+
+	input{
+		background-color: #d8d8d8;
 	}
 }
