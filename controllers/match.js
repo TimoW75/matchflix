@@ -16,6 +16,7 @@ const matching = (req, res) => {
 		// Again query all users but only fetch one offset by the random entry
 		User.findOne().skip(random).exec(
 			function (err, result) {
+				console.log(result.shows)
 				if(session.email == result.email){
 					res.redirect("match");
 					// Checking if user doesn't match him/herself
@@ -24,6 +25,7 @@ const matching = (req, res) => {
 					name: result.name,
 					age: result.age,
 					about: result.about,
+					shows: result.shows
 				});
 			}
 			});
