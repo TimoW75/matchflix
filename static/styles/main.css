@@ -62,7 +62,7 @@ body {
   top: 91%;
   width: 100%;
   height: 150px;
-  background-color: #ff5148;
+  background: linear-gradient(0deg, #780d0d 0%, #c46565 100%);
   text-align: center;
   border-top: 2px solid black;
 }
@@ -82,7 +82,7 @@ body {
 
 button {
   color: #f5f5f5;
-  background-color: #ff5148;
+  background-color: #c46565;
 }
 
 input[type=submit] {
@@ -116,7 +116,7 @@ input[type=submit] {
 }
 .pagina_home a {
   display: inline-block;
-  background-color: #ff5148;
+  background-color: #c46565;
   border-radius: 30px;
   color: #f5f5f5;
   margin: 1em;
@@ -126,7 +126,7 @@ input[type=submit] {
   margin-left: 1em;
   margin-bottom: 120px;
   padding: 1em;
-  background-color: #ff5148;
+  background-color: #c46565;
   border: none;
   color: #f5f5f5;
   border-radius: 30px;
@@ -356,7 +356,7 @@ html, body {
   height: 250px;
   width: 250px;
   border-radius: 150px !important;
-  background-color: #ff5148;
+  background-color: #c46565;
   position: fixed;
   top: 78%;
   left: 22%;
@@ -427,7 +427,7 @@ html, body {
 .pagina_update #button {
   margin-left: 1em;
   padding: 1em;
-  background-color: #ff5148;
+  background-color: #c46565;
   border-radius: 30px;
   border: none;
   color: #f5f5f5;
@@ -474,6 +474,9 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: fixed;
+  bottom: 150px;
+  overflow-y: scroll;
 }
 #messages > li {
   padding: 0.5rem 1rem;
@@ -511,6 +514,25 @@ body {
 .like-choice_btn {
   padding: 1rem;
   width: 6rem;
+}
+
+.pagina_404 * {
+  margin: 0;
+  font-size: 1em;
+  font-family: Montserrat, sans-serif;
+  color: #0c0c0c;
+}
+.pagina_404 h2 {
+  font-size: 2em;
+  padding: 0.5em;
+}
+.pagina_404 #button {
+  margin-left: 1em;
+  padding: 1em;
+  background-color: #c46565;
+  border-radius: 30px;
+  border: none;
+  color: #f5f5f5;
 }
 
 body {
