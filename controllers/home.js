@@ -12,6 +12,9 @@ const home = async (req, res) => {
             email: session.email
         }).then((documents) => {
             let name = documents.map(user => user.name);
+            let age = documents.map(user => user.age);
+            let gender = documents.map(user => user.gender);
+            let email = documents.map(user => user.email);
             let about = documents.map(user => user.about);
             let shows = documents.map(user => user.shows);
             User.find({
@@ -19,6 +22,9 @@ const home = async (req, res) => {
             }, async (err, shows) => {
                 await res.render('home', {
                     name: name,
+                    age: age,
+                    gender: gender,
+                    email: email,
                     about: about,
                     shows: shows
                 })
@@ -31,3 +37,5 @@ const home = async (req, res) => {
 module.exports = {
     home: home,
 };
+
+

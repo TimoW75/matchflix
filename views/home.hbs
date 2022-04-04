@@ -2,27 +2,28 @@
 
     <h2>Hi {{name}}!</h2>
 
-    <h3>My profile</h3>
-
-    <p>Username</p>
-    <p>About me: <br> {{about}}!</p>
+    <section class="gegevens">
+        <p>{{name}}</p>
+        <p>{{age}}</p>
+        <p>{{gender}}</p>
+        <p>{{email}}</p>
+        <p><p class="about">About me:</p> <br> {{about}}!</p>
+    </section>
 
     <a href="update">Manage profile</a>
 
 
     <h3>Your favorite shows:</h3>
-    <section class="seriesGrid"> 
+    <section class="seriesGrid">
         {{#each shows}} {{! voor elke item in de shows database}}
-            {{#each shows}}
-                <section id="{{this}}"></section>
-            {{/each}}
-        {{/each}} 
+        {{#each shows}}
+        <section id="{{this}}"></section>
+        {{/each}}
+        {{/each}}
     </section>
 
 
     <a href="series">Change series</a>
-
-    <a href="match">Matching</a>
 
     <form action="/logout" method="post">
         <input type="submit" value="Log out">
