@@ -417,6 +417,9 @@ html, body {
   margin-bottom: 175px;
 }
 
+.pagina_update {
+  text-align: center;
+}
 .pagina_update * {
   margin: 0;
   font-size: 1em;

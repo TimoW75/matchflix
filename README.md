@@ -95,7 +95,7 @@
   <li><a href="https://github.com/TimoW75/matchflix/commit/3ea5200f48fe0a4f80f63120bfcbff5517df3269">3ea5200</a>: Added 404 page</li>
  </ul>
  
- <h3>Robin</h3>
+<h3>Robin</h3>
  <ul>
   <li><a href="https://github.com/TimoW75/matchflix/commit/81e6bf6b81fe1f7431a96d81e2e244a1dc8da380">81e6bf6b81fe1f7431a96d81e2e244a1dc8da380</a>: Socket.io implementeren</li>
   <li><a href="https://github.com/TimoW75/matchflix/commit/5759bed361db0a246df901e97969293719074a17">5759bed361db0a246df901e97969293719074a17</a>: handlebars voor chat</li>
