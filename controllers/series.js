@@ -8,7 +8,7 @@ let session;
 const series = async (req, res) => {
 
 	session = req.session
-	if (!session.email) {
+	if (!session.email) { //make sure the user is logged in with a session
 		await res.redirect('/')
 	} else {
 		User.update({
@@ -20,16 +20,15 @@ const series = async (req, res) => {
 		}, function (err, affected) {})
 	}
 
-	fetch('https://www.episodate.com/api/most-popular?page=1')
+	fetch('https://www.episodate.com/api/most-popular?page=1') //fetch the seriesdata
 		.then(response => response.json())
 		.then(series => {
-			res.render('serieselect', series)
+			res.render('serieselect', series) //render the data to handlebars
 		});
 }
 
 
 const seriesSubmit = async (req, res) => {
-	let serieCheck = 0; // variable voor het bekijken of er een stijl is aangeklikt
 
 	session = req.session
 	if (!session.email) {
@@ -40,15 +39,13 @@ const seriesSubmit = async (req, res) => {
 		})
 		await res.redirect('/')
 	}
-	console.log(session.email);
-
-	serieSelectList = [req.body.serieName];
-	serieSelectList.forEach(show => {
+	serieSelectList = [req.body.serieName]; //Get all series on the page
+	serieSelectList.forEach(show => {// for each selected show add it to the
 		const addShows = User.findOneAndUpdate({
 			email: session.email
 		}, {
 			$addToSet: {
-				shows: show
+				shows: show //add the show to the shows array in the database
 			}
 		}).lean().exec();
 	});
