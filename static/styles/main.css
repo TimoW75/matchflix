@@ -62,7 +62,7 @@ body {
   top: 91%;
   width: 100%;
   height: 150px;
-  background-color: #ed1c24;
+  background-color: #ff5148;
   text-align: center;
   border-top: 2px solid black;
 }
@@ -85,8 +85,17 @@ button {
   background-color: #ff5148;
 }
 
+input[type=submit] {
+  background-color: #c46565;
+  color: white;
+  border: none;
+  border-radius: 0.8em;
+  margin-top: 2em;
+  font-weight: 600;
+  font-size: 1.05em;
+}
+
 .pagina_home {
-  text-align: center;
   text-align: center;
 }
 .pagina_home * {
@@ -282,15 +291,6 @@ html, body {
   border-radius: 2em;
   padding: 1em;
 }
-.pagina_login input[type=submit] {
-  background-color: #c46565;
-  color: white;
-  border: none;
-  border-radius: 0.8em;
-  margin-top: 2em;
-  font-weight: 600;
-  font-size: 1.05em;
-}
 .pagina_login label {
   display: block;
   font-size: 1.2em;
@@ -438,9 +438,62 @@ html, body {
   border: solid 0.01em;
 }
 
+body {
+  margin: 0;
+}
+
+#form {
+  padding: 0.25rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 3rem;
+}
+#form > button {
+  border: none;
+  padding: 0 1rem;
+  margin: 0.25rem;
+  border-radius: 3px;
+  outline: none;
+}
+
+#input {
+  border: none;
+  padding: 0 1rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  margin: 0.25rem;
+}
+#input:focus {
+  outline: none;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 150px;
+  overflow-y: scroll;
+}
+#messages > li {
+  padding: 0.5rem 1rem;
+}
+
+.chatBar {
+  margin-bottom: 100px;
+}
+.chatBar input {
+  background-color: #d8d8d8;
+}
+
 .match-container {
   display: flex;
   justify-content: center;
+  position: relative;
+  top: 1rem;
 }
 .match-container .person-name {
   font-weight: 700;
@@ -449,6 +502,9 @@ html, body {
 .match-container li {
   margin: 0.2rem;
 }
+.match-container form {
+  margin: 1.5rem;
+}
 
 .rematch_btn {
   margin-top: 2rem;
@@ -456,13 +512,10 @@ html, body {
 }
 
 .like-choice_btn {
-  margin: 1.5rem;
-  padding: 0.5rem;
-  width: 4rem;
+  padding: 1rem;
+  width: 6rem;
 }
 
 body {
   background-color: #fffefc;
 }
-
-/*# sourceMappingURL=main.css.map */

@@ -5,8 +5,6 @@ const sessions = require('express-session');
 
 let session;
 
-
-
 const series = async (req, res) => {
 
 	session = req.session
