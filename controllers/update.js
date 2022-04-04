@@ -1,16 +1,17 @@
 const User = require('../models/user');
 
-
 let session;
 
 const update = (req, res) => {
   session = req.session;
+  // Check of er een sessie is
   if (!session.email) {
     res.redirect('/');
   } else {
     User.find({
       email: session.email
     }).then((documents) => {
+      // Laad de gegevens in om ze te laten zien in het scherm
       let name = documents.map(user => user.name);
       let age = documents.map(user => user.age);
       let gender = documents.map(user => user.gender);
@@ -18,6 +19,7 @@ const update = (req, res) => {
       let about = documents.map(user => user.about);
       let shows = documents.map(user => user.shows);
       res.render('update', {
+        // Laat deze gegevens zien 
         name: name,
         age: age,
         gender: gender,
@@ -30,11 +32,13 @@ const update = (req, res) => {
 }
 
 
-const gewijzigd = async (req, res, next) => {
+const gewijzigd = async (req, res) => {
   session = req.session;
+  // Haal gegevens uit database op basis van emailadres
   User.updateOne({
     email: session.email
   }, {
+    // Geef deze gegevens weer om aan te passen
     name: req.body.name,
     age: req.body.age,
     gender: req.body.gender,

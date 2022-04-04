@@ -15,14 +15,28 @@
     h2 {
         font-size: 2em;
         margin: 1em;
+    }
 
+    h3 {
+        font-size: 1.5em;
+        margin: 1em;
     }
 
     p {
         margin: 0em;
     }
 
-    a {
+    .manage {
+        display: inline-block;
+        background-color: $btn-color;
+        border-radius: 30px;
+        color: $text-color_white;
+        margin-top: 0;
+        margin-bottom: 2em;
+        padding: 1em;
+    }
+
+    .change {
         display: inline-block;
         background-color: $btn-color;
         border-radius: 30px;

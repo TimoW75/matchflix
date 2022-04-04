@@ -1,6 +1,8 @@
 .match-container{
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 1rem;
 
     .person-name{
         font-weight: 700;
@@ -8,6 +10,10 @@
     }
     li{
         margin: 0.2rem;
+    }
+
+    form{
+        margin: 1.5rem;
     }
 }
 .rematch_btn{
@@ -17,6 +23,5 @@
 
 .like-choice_btn{
     padding: 1rem;
-    margin: 1.5rem;
+    width: 6rem;
 }
-

@@ -1,0 +1,34 @@
+.pagina_404 {
+
+    text-align: center;
+
+    * {
+        margin: 0;
+        font-size: 1em;
+        color: $text-color;
+        text-decoration: none;
+        font-family: $primary-font;
+        text-align: center;
+        justify-content: center;
+    }
+    
+
+    h2 {
+        font-size: 2em;
+        margin: 1em;
+    }
+
+    p {
+        margin: 0em;
+    }
+
+    .terug {
+        display: inline-block;
+        background-color: $btn-color;
+        border-radius: 30px;
+        color: $text-color_white;
+        margin-top: 2em;
+        padding: 1em;
+    }
+
+}
