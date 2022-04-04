@@ -12,13 +12,14 @@
         padding: 0.5em;
     }
 
-    label {
-        display: block;
+    fieldset {
+        margin-bottom: 1em;
+        text-align: center;
     }
 
-    fieldset {
-        margin-left: 1em;
-        margin-bottom: 1em;
+    label {
+        display: block;
+        // margin-left: 2em;
     }
 
     input {
@@ -29,11 +30,15 @@
         margin-left: 1em;
         padding: 1em;
         background-color: $btn-color;
+        border-radius: 30px;
         border: none;
         color: $text-color_white;
     }
-    textarea{
+
+    textarea {
         width: 90%;
+        resize: none;
+        border: solid 0.01em;
+
     }
 }
-

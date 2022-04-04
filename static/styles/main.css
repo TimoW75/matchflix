@@ -62,7 +62,7 @@ body {
   top: 91%;
   width: 100%;
   height: 150px;
-  background-color: #fffefc;
+  background-color: #ff5148;
   text-align: center;
   border-top: 2px solid black;
 }
@@ -70,19 +70,32 @@ body {
   display: inline-block;
   width: 50px;
   height: 50px;
-  margin: 15px 30px 0px 30px;
+  margin: 10px 30px 0px 30px;
+  color: #0c0c0c;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
 }
 .navbar img {
-  width: 60px;
+  width: 50px;
 }
 
 button {
   color: #f5f5f5;
-  background-color: #ed1c24;
+  background-color: #ff5148;
+}
+
+input[type=submit] {
+  background-color: #c46565;
+  color: white;
+  border: none;
+  border-radius: 0.8em;
+  margin-top: 2em;
+  font-weight: 600;
+  font-size: 1.05em;
 }
 
 .pagina_home {
-  text-align: center;
   text-align: center;
 }
 .pagina_home * {
@@ -96,29 +109,34 @@ button {
 }
 .pagina_home h2 {
   font-size: 2em;
-  margin: 0.5em;
-}
-.pagina_home h3 {
-  font-size: 1.5em;
-  margin: 0.7em;
+  margin: 1em;
 }
 .pagina_home p {
-  margin: 1em;
+  margin: 0em;
 }
 .pagina_home a {
   display: inline-block;
-  border: solid 0.5px #c42020;
-  background-color: #ed1c24;
+  background-color: #ff5148;
+  border-radius: 30px;
   color: #f5f5f5;
+  margin: 1em;
   padding: 1em;
 }
 .pagina_home input {
   margin-left: 1em;
   margin-bottom: 120px;
   padding: 1em;
-  background-color: #ed1c24;
+  background-color: #ff5148;
   border: none;
   color: #f5f5f5;
+  border-radius: 30px;
+}
+.pagina_home .gegevens {
+  margin: 3em;
+}
+.pagina_home .gegevens .about {
+  margin-top: 2em;
+  text-decoration: underline;
 }
 
 #arrow {
@@ -273,15 +291,6 @@ html, body {
   border-radius: 2em;
   padding: 1em;
 }
-.pagina_login input[type=submit] {
-  background-color: #c46565;
-  color: white;
-  border: none;
-  border-radius: 0.8em;
-  margin-top: 2em;
-  font-weight: 600;
-  font-size: 1.05em;
-}
 .pagina_login label {
   display: block;
   font-size: 1.2em;
@@ -347,8 +356,7 @@ html, body {
   height: 250px;
   width: 250px;
   border-radius: 150px !important;
-  background-color: #ed1c24;
-  border: 2px solid #c42020;
+  background-color: #ff5148;
   position: fixed;
   top: 78%;
   left: 22%;
@@ -406,12 +414,12 @@ html, body {
   font-size: 2em;
   padding: 0.5em;
 }
+.pagina_update fieldset {
+  margin-bottom: 1em;
+  text-align: center;
+}
 .pagina_update label {
   display: block;
-}
-.pagina_update fieldset {
-  margin-left: 1em;
-  margin-bottom: 1em;
 }
 .pagina_update input {
   border: solid 0.01em;
@@ -419,12 +427,57 @@ html, body {
 .pagina_update #button {
   margin-left: 1em;
   padding: 1em;
-  background-color: #ed1c24;
+  background-color: #ff5148;
+  border-radius: 30px;
   border: none;
   color: #f5f5f5;
 }
 .pagina_update textarea {
   width: 90%;
+  resize: none;
+  border: solid 0.01em;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 3rem;
+}
+
+#form {
+  padding: 0.25rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 3rem;
+}
+#form > button {
+  border: none;
+  padding: 0 1rem;
+  margin: 0.25rem;
+  border-radius: 3px;
+  outline: none;
+}
+
+#input {
+  border: none;
+  padding: 0 1rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  margin: 0.25rem;
+}
+#input:focus {
+  outline: none;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#messages > li {
+  padding: 0.5rem 1rem;
 }
 
 .match-container {
@@ -445,13 +498,10 @@ html, body {
 }
 
 .like-choice_btn {
+  padding: 1rem;
   margin: 1.5rem;
-  padding: 0.5rem;
-  width: 4rem;
 }
 
 body {
   background-color: #fffefc;
 }
-
-/*# sourceMappingURL=main.css.map */

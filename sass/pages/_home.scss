@@ -1,8 +1,6 @@
 .pagina_home {
     text-align: center;
 
-    text-align: center;
-    
     * {
         margin: 0;
         font-size: 1em;
@@ -16,25 +14,20 @@
 
     h2 {
         font-size: 2em;
-        margin: 0.5em;
+        margin: 1em;
 
-    }
-
-    h3 {
-        font-size: 1.5em;
-        margin: 0.7em;
     }
 
     p {
-        margin: 1em;
+        margin: 0em;
     }
 
     a {
         display: inline-block;
-        border: solid 0.5px $border-color;
         background-color: $btn-color;
+        border-radius: 30px;
         color: $text-color_white;
-        // margin: 1em;
+        margin: 1em;
         padding: 1em;
     }
 
@@ -45,6 +38,15 @@
         background-color: $btn-color;
         border: none;
         color: $text-color_white;
+        border-radius: 30px;
+    }
+
+    .gegevens {
+        margin: 3em;
+    }
+    .gegevens .about {
+        margin-top: 2em;
+        text-decoration: underline;
     }
 
 }
