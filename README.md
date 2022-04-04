@@ -93,11 +93,10 @@
  
  <h3>Robin</h3>
  <ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/81e6bf6b81fe1f7431a96d81e2e244a1dc8da380">81e6bf6b81fe1f7431a96d81e2e244a1dc8da380</a>: Socket.io implementeren</li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/5759bed361db0a246df901e97969293719074a17">5759bed361db0a246df901e97969293719074a17</a>: handlebars voor chat</li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/3f7586550652330f933552c8c44ac3f7a0fda193">3f7586550652330f933552c8c44ac3f7a0fda193</a>: Socket.io toevoegen en route aanleggen voor chatten</li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/bb2c3c885b277313ae907cac5529e56e704fd15a">bb2c3c885b277313ae907cac5529e56e704fd15a</a>: Styling</li>
  </ul>
  
  <h3>Casper</h3>
