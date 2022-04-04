@@ -30,7 +30,7 @@ const update = (req, res) => {
 }
 
 
-const gewijzigd = async (req, res, next) => {
+const gewijzigd = async (req, res) => {
   session = req.session;
   User.updateOne({
     email: session.email
