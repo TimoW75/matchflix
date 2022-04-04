@@ -44,6 +44,12 @@ const routes = require('./routes');
 app.use('/', urlencodedParser, routes);
 
 
+// 404 pagina
+app.get('*', (req, res) => {
+  res.status(404).render('404');
+});
+
+
 // console.log(serieLijst)
 
 app.listen(PORT, () => {
