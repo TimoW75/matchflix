@@ -75,11 +75,13 @@
  
  <h3>Teun</h3>
  <ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+   <li><a href="https://github.com/TimoW75/matchflix/commit/60da65605de59bb7fea0b118010d5abb8eac302c">60da656</a>: Created the folder structure</li>
+    <li><a href="https://github.com/TimoW75/matchflix/commit/4fc14c5b3b25262040ab12d24cdd1a6fc41eb5fe">4fc14c5</a>: Update readme and helped with some routing</li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/5482dbbf1e076992b79358240dbba90c0119b7a3">5482dbb</a>: Matching function + created a user model (userSchema)</li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/d13aee6fbb2271011b48a77c0a5cc70387547f5d">d13aee6</a>: Updated the random matching to check if a person matches with theirselves</li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/66555a77bb8a38f1448d1e2f419eaecd61f01402">66555a7</a>: First (minimal) styling</li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/f2550ab91c264066e12d487310a3f34f92df2954">f2550ab</a>: The liking functionality</li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/19ca291ce2f99584a9204c1a986f0393a0e94db8">19ca291</a>: Added gulp and set it up to let sass and CSSNano run at the same time and watch for changes</li>
  </ul>
  
  <h3>Lina</h3>
