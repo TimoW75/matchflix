@@ -4,6 +4,7 @@ let session;
 
 const home = async (req, res) => {
     session = req.session
+    // Check of er een sessie is
     if (!session.email) {
         console.log("Je moet ingelogd zijn om hier te kunnen komen.")
         res.redirect('/login')
@@ -11,6 +12,7 @@ const home = async (req, res) => {
         User.find({
             email: session.email
         }).then((documents) => {
+            // Laad de gegevens in om ze te laten zien in het scherm
             let name = documents.map(user => user.name);
             let age = documents.map(user => user.age);
             let gender = documents.map(user => user.gender);
@@ -21,6 +23,7 @@ const home = async (req, res) => {
                 email: session.email
             }, async (err, shows) => {
                 await res.render('home', {
+                    // Laat deze gegevens zien 
                     name: name,
                     age: age,
                     gender: gender,
