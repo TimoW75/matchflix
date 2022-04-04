@@ -84,11 +84,13 @@
  
  <h3>Lina</h3>
  <ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/83d118116df9c3bebbdb8d5effc38b15529f882e">83d1181</a>: Made page to manage profile</li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/2cb21ba569b1c91f64b469a0cbefb33d5b949b6f">2cb21ba</a>: Added links in controller and route (but they are not yet valid, only for testing)</li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/1388c1d9c8971c4e076537039622c30b3b331c17">1388c1d</a>: Changing data on your profile now works</li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/f18f05ff2e3b2e13bfa008db9d5477919d13b3cb">f18f05f</a>: Base for css on home.hbs and update.hbs</li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/9479eeba6cc5ceb5ab4bad49cefd6ec322ab52b7">9479eeb</a>: Show more info from database on home</li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/0026d3d6d04a340aa62d77b87e2b241071a32be8">0026d3d</a>: Error if not all fields are filled</li>
+  <li><a href="https://github.com/TimoW75/matchflix/commit/3ea5200f48fe0a4f80f63120bfcbff5517df3269">3ea5200</a>: Added 404 page</li>
  </ul>
  
  <h3>Robin</h3>

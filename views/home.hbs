@@ -3,14 +3,15 @@
     <h2>Hi {{name}}!</h2>
 
     <section class="gegevens">
+        <p class="about">Info:</p>
         <p>{{name}}</p>
         <p>{{age}}</p>
         <p>{{gender}}</p>
         <p>{{email}}</p>
-        <p><p class="about">About me:</p> <br> {{about}}!</p>
+        <p><p class="about">About me:</p> <br> {{about}}</p>
     </section>
 
-    <a href="update">Manage profile</a>
+    <a class="manage" href="update">Manage profile</a>
 
 
     <h3>Your favorite shows:</h3>
@@ -23,7 +24,7 @@
     </section>
 
 
-    <a href="series">Change series</a>
+    <a class="change" href="series">Change series</a>
 
     <form action="/logout" method="post">
         <input type="submit" value="Log out">
