@@ -225,7 +225,7 @@ button {
   border: none;
 }
 
-.page-home {
+.page-home section {
   padding: 1em;
 }
 .page-home h2 {
@@ -236,12 +236,15 @@ button {
 }
 .page-home input.main-btn {
   margin-left: 1em;
-  margin-bottom: 120px;
+  margin-bottom: 7.5em;
   padding: 1em;
 }
 .page-home .about {
   margin-top: 2em;
   text-decoration: underline;
+}
+.page-home .series {
+  background-color: #c46565;
 }
 
 html, body {
@@ -322,20 +325,8 @@ html, body {
 
 .series-grid input:checked {
   opacity: 0.8;
-<<<<<<< HEAD
-  border-radius: 30px;
-  background-color: #ffffff;
-  border: 4px solid green;
-  margin: 0;
-}
-
-.seriesGrid .button {
-  height: 250px;
-  width: 250px;
-  border-radius: 150px !important;
-=======
   border-radius: 2em;
-  background-color: #fffefc;
+  background-color: #ffffff;
   border: 0.5em solid green;
   margin: 0;
 }
@@ -350,8 +341,6 @@ html, body {
   height: 15em;
   width: 15em;
   border-radius: 8em;
-  background-color: #c46565;
->>>>>>> b9ee68a74c2f121769815f8edad07b5813987ee3
   position: fixed;
   justify-self: center;
   bottom: -5em;
@@ -360,13 +349,7 @@ html, body {
   margin-top: 1em;
   border: none;
   font-size: 1.5em;
-<<<<<<< HEAD
-  font-weight: bold;
-  font-family: Georgia, "Times New Roman", Times, serif;
   color: #ffffff;
-=======
-  color: #f5f5f5;
->>>>>>> b9ee68a74c2f121769815f8edad07b5813987ee3
 }
 .series-grid input {
   color: transparent;
@@ -497,52 +480,6 @@ body {
   background-color: #d8d8d8;
 }
 
-.match-container {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 1rem;
-}
-.match-container .person {
-  max-width: 80vw;
-}
-.match-container .person-name {
-  font-weight: 700;
-  font-size: 2rem;
-}
-.match-container li {
-  margin: 0.2rem;
-}
-.match-container form {
-  margin: 1.5rem 0.5rem 1.5rem 0.5rem;
-}
-
-input[type=submit] {
-  margin-top: 0;
-}
-
-.like-choice_btn {
-  padding: 1rem;
-  width: 6rem;
-}
-
-.match-series {
-  display: flex;
-  margin: auto;
-  text-align: center;
-  margin-top: 25px;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 80vw;
-}
-.match-series section {
-  height: 139px;
-  width: 100px;
-  border-radius: 1rem;
-  margin: 0.4rem;
-  background-size: cover;
-}
-
 .page-404 h2 {
   margin: 1em;
 }
@@ -555,12 +492,5 @@ input[type=submit] {
 }
 
 body {
-<<<<<<< HEAD
   background-color: #ffffff;
 }
-=======
-  background-color: #fffefc;
-}
-
-/*# sourceMappingURL=main.css.map */
->>>>>>> b9ee68a74c2f121769815f8edad07b5813987ee3

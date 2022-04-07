@@ -1,5 +1,7 @@
 .page-home {
-    padding: 1em;
+    section {
+        padding: 1em;
+    }
 
     h2 {
         margin-bottom: 1em;
@@ -11,13 +13,17 @@
 
     input.main-btn{
         margin-left: 1em;
-        margin-bottom: 120px; 
+        margin-bottom: 7.5em; 
         padding: 1em;
     }
 
     .about {
-         margin-top: 2em;
-         text-decoration: underline;
+        margin-top: 2em;
+        text-decoration: underline;
+    }
+
+    .series {
+        background-color: $bg-rose;
     }
 }
 

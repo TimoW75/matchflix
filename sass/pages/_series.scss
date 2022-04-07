@@ -15,35 +15,14 @@
     margin-top: 2em;
 
     .button {
-<<<<<<< HEAD
-        height: 250px;
-        width: 250px;
-        border-radius: 150px !important;
-        //background-color: $btn-color;
-        position: fixed;
-        top: 78%;
-        left: 22%;
-
-        p {
-            margin-top: 10px;
-            font-size: 1.5em;
-            font-weight: bold;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            color: $text-color;
-            margin-top: 10px;
-            top: 0;
-        }
-
-=======
         height: 15em;
         width: 15em;
         border-radius: 8em;
-        background-color: $btn-color;
+        //background-color: $btn-color;
         position: fixed; 
         justify-self: center;
         bottom: -5em;
        
->>>>>>> b9ee68a74c2f121769815f8edad07b5813987ee3
         #submit {
             margin-top: 1em;
             border: none;
