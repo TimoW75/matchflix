@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
 #arrow {
   background-image: url("https://static.episodate.com/images/tv-show/thumbnail/29560.jpg");
   background-size: cover;
@@ -157,6 +157,26 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+h1 {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+}
+
 .navbar {
   position: fixed;
   top: 91%;
@@ -181,73 +201,45 @@ body {
 }
 
 button {
-  color: #f5f5f5;
+  color: #ffffff;
   background-color: #c46565;
 }
 
-input[type=submit] {
+.main-btn {
+  display: inline-block;
   background-color: #c46565;
-  color: white;
-  border: none;
-  border-radius: 0.8em;
-  margin-top: 2em;
-  font-weight: 600;
-  font-size: 1.05em;
-}
-
-.pagina_home {
-  text-align: center;
-}
-.pagina_home * {
-  margin: 0;
-  font-size: 1em;
-  color: #0c0c0c;
+  border-radius: 1.8em;
+  color: #ffffff;
+  padding: 1em;
   text-decoration: none;
-  font-family: Montserrat, sans-serif;
-  text-align: center;
-  justify-content: center;
+  border: none;
 }
-.pagina_home h2 {
-  font-size: 2em;
-  margin: 1em;
-}
-.pagina_home h3 {
-  font-size: 1.5em;
-  margin: 1em;
-}
-.pagina_home p {
-  margin: 0em;
-}
-.pagina_home .manage {
+
+.alt-btn {
   display: inline-block;
-  background-color: #c46565;
-  border-radius: 30px;
-  color: #f5f5f5;
-  margin-top: 0;
-  margin-bottom: 2em;
+  background-color: #ffffff;
+  border-radius: 1.8em;
+  color: #c46565;
+  padding: 1em;
+  text-decoration: none;
+  border: none;
+}
+
+.page-home {
   padding: 1em;
 }
-.pagina_home .change {
-  display: inline-block;
-  background-color: #c46565;
-  border-radius: 30px;
-  color: #f5f5f5;
-  margin: 1em;
-  padding: 1em;
+.page-home h2 {
+  margin-bottom: 1em;
 }
-.pagina_home input {
+.page-home a.main-btn {
+  margin: 2em 0;
+}
+.page-home input.main-btn {
   margin-left: 1em;
   margin-bottom: 120px;
   padding: 1em;
-  background-color: #c46565;
-  border: none;
-  color: #f5f5f5;
-  border-radius: 30px;
 }
-.pagina_home .gegevens {
-  margin: 3em;
-}
-.pagina_home .gegevens .about {
+.page-home .about {
   margin-top: 2em;
   text-decoration: underline;
 }
@@ -360,7 +352,7 @@ html, body {
 .seriesGrid input:checked {
   opacity: 0.8;
   border-radius: 30px;
-  background-color: #fffefc;
+  background-color: #ffffff;
   border: 4px solid green;
   margin: 0;
 }
@@ -369,7 +361,6 @@ html, body {
   height: 250px;
   width: 250px;
   border-radius: 150px !important;
-  background-color: #c46565;
   position: fixed;
   top: 78%;
   left: 22%;
@@ -392,7 +383,7 @@ html, body {
   font-size: 1.5em;
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #f5f5f5;
+  color: #ffffff;
 }
 .seriesGrid .button input {
   height: 50px;
@@ -443,10 +434,9 @@ html, body {
 .pagina_update #button {
   margin-left: 1em;
   padding: 1em;
-  background-color: #c46565;
   border-radius: 30px;
   border: none;
-  color: #f5f5f5;
+  color: #ffffff;
 }
 .pagina_update textarea {
   width: 90%;
@@ -557,34 +547,17 @@ input[type=submit] {
   background-size: cover;
 }
 
-.pagina_404 {
-  text-align: center;
-}
-.pagina_404 * {
-  margin: 0;
-  font-size: 1em;
-  color: #0c0c0c;
-  text-decoration: none;
-  font-family: Montserrat, sans-serif;
-  text-align: center;
-  justify-content: center;
-}
-.pagina_404 h2 {
-  font-size: 2em;
+.page-404 h2 {
   margin: 1em;
 }
-.pagina_404 p {
-  margin: 0em;
+.page-404 p {
+  margin: 0;
 }
-.pagina_404 .terug {
-  display: inline-block;
-  background-color: #c46565;
-  border-radius: 30px;
-  color: #f5f5f5;
+.page-404 .main-btn {
   margin-top: 2em;
   padding: 1em;
 }
 
 body {
-  background-color: #fffefc;
+  background-color: #ffffff;
 }

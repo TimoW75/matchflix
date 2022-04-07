@@ -1,21 +1,19 @@
-<main class="pagina_home">
+<main class="page-home">
 
     <h2>Hi {{name}}!</h2>
 
-    <section class="gegevens">
-        <p class="about">Info:</p>
-        <p>{{name}}</p>
-        <p>{{age}}</p>
-        <p>{{gender}}</p>
-        <p>{{email}}</p>
-        <p><p class="about">About me:</p> <br> {{about}}</p>
-    </section>
+    <p class="about">Info:</p>
+    <p>{{name}}</p>
+    <p>{{age}}</p>
+    <p>{{gender}}</p>
+    <p>{{email}}</p>
+    <p><p class="about">About me:</p> <br> {{about}}</p>
 
-    <a class="manage" href="update">Manage profile</a>
+    <a class="main-btn" href="update">Manage profile</a>
 
 
     <h3>Your favorite shows:</h3>
-    <section class="seriesGrid">
+    <section class="series-grid">
         {{#each shows}} {{! voor elke item in de shows database}}
         {{#each shows}}
         <section id="{{this}}"></section>
@@ -24,10 +22,10 @@
     </section>
 
 
-    <a class="change" href="series">Change series</a>
+    <a class="alt-btn" href="series">Change series</a>
 
     <form action="/logout" method="post">
-        <input type="submit" value="Log out">
+        <input type="submit" class="main-btn" value="Log out">
     </form>
 
 </main>

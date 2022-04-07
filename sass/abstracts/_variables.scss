@@ -1,18 +1,23 @@
 // Variables
-$primary-font: Montserrat, sans-serif;
 
-// Colors
-$bg-color: #fffefc;
-
-$text-color: #0c0c0c;
-$text-color_white: #f5f5f5;
-
-$border-color: #c42020;
-$btn-color: rgba(196,101,101,1);
-
-$nav-color: #22272e;
- 
+// Background
+$bg-color: #ffffff;
 $bg-gradient: linear-gradient(0deg, rgba(120,13,13,1) 0%, rgba(196,101,101,1) 100%);
+
+// Text
+$primary-font: Montserrat, sans-serif;
+$text-color: #0c0c0c;
+$text-color_white: #ffffff;
+
+// Buttons
+$border-color: #c42020;
+$btn-main-bg: rgba(196,101,101,1);
+$btn-alt-bg: #ffffff;
+$btn-main-text: #ffffff;
+$btn-alt-text: rgba(196,101,101,1);
+
+// Nav
+$nav-color: #22272e;
 
 
 #arrow{
