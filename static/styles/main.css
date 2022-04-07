@@ -328,7 +328,7 @@ html, body {
   margin-bottom: 4em;
 }
 
-.seriesGrid input:checked {
+.series-grid input:checked {
   opacity: 0.8;
   border-radius: 2em;
   background-color: #fffefc;
@@ -336,13 +336,13 @@ html, body {
   margin: 0;
 }
 
-.seriesGrid {
+.series-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
   margin-top: 2em;
 }
-.seriesGrid .button {
+.series-grid .button {
   height: 15em;
   width: 15em;
   border-radius: 8em;
@@ -351,37 +351,37 @@ html, body {
   justify-self: center;
   bottom: -5em;
 }
-.seriesGrid .button #submit {
+.series-grid .button #submit {
   margin-top: 1em;
   border: none;
   font-size: 1.5em;
   color: #f5f5f5;
 }
-.seriesGrid input {
+.series-grid input {
   color: transparent;
   appearance: none;
   position: relative;
   height: 18em;
   width: 182px;
 }
-.seriesGrid section {
+.series-grid section {
   height: 15em;
   width: 11em;
   border-radius: 2em;
-  margin: 10px auto 10px auto;
+  margin: 0.5em auto 0.5em auto;
 }
-.seriesGrid img {
+.series-grid img {
   position: absolute;
   width: 11em;
   height: 15em;
   border-radius: 2em;
 }
 
-#seriesPage {
+#series-page {
   margin-bottom: 175px;
 }
 
-#Filtermsg {
+#filtermsg {
   margin-top: 1em;
   color: var(--txt-color);
   font-size: 1.5em;

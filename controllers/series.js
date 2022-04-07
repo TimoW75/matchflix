@@ -39,7 +39,8 @@ const seriesSubmit = async (req, res) => {
 		})
 		await res.redirect('/')
 	}
-	serieSelectList = [req.body.serieName]; //Get all series on the page
+	serieSelectList = [req.body['serie-name']]; //Get all series on the page
+	console.log(serieSelectList)
 	serieSelectList.forEach(show => {// for each selected show add it to the
 		const addShows = User.findOneAndUpdate({
 			email: session.email

@@ -1,7 +1,7 @@
 
 const shows = document.querySelectorAll(".series")
 const checkbox = document.querySelectorAll(".checkbox")
-const msg = document.querySelector("#Filtermsg")
+const msg = document.querySelector("#filtermsg")
 let checkedStyles = 0
 
 
