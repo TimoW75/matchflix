@@ -12,19 +12,16 @@ const userSchema = new mongoose.Schema({
 	},
     gender: {
         type: String,
-		enum: {
-			values: ['Man', 'Woman', 'Other'],
-			message: '{VALUE} is not a valid gender'
-		}
+		required: true
     },
     email: {
         type: String,
 		required: true,
-		unique: true,
+		unique: true
     },
     password: {
         type: String,
-		required: true,
+		required: true
     },
 	about:{
 		type: String

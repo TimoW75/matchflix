@@ -6,12 +6,12 @@ const saltRounds = 10;
 let session;
 
 // Renders the registration page when going to /register
-const registreren = (req, res) => {
+const registerRender = (req, res) => {
     res.render('register');
 };
 
 // Registration function (stores everything in the database, creates new session & sends test email)
-const register = async (req, res) => {
+const registerFunction = async (req, res) => {
     console.log(req.body.name);
     // Encrypts newly made password
 	const hashedPassword = await bcrypt.hash(req.body.password, saltRounds);
@@ -68,6 +68,6 @@ async function sendEmail(email) {
 }
 
 module.exports = {
-    registreren: registreren,
-    register: register,
+    registerRender: registerRender,
+    registerFunction: registerFunction,
 };
