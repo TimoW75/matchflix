@@ -1,24 +1,30 @@
 <main class="pagina_login">
-
     <h1>Register</h1>
     <form action="/register" class="pe register" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" name="name" id="name"><br>
-        <label for="age">Age:</label><br>
-        <input type="number" name="age" id="age"><br>
-        <label for="gender">Gender:</label><br>
-        <input type="text" id="gender" name="gender" placeholder="Man, Woman or Other"<br>
-        <label for="email">Email address:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age">
+        
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="Man">Man</option>
+            <option value="Woman">Woman</option>
+            <option value="Other">Other</option>
+        </select>
+        
+        <label for="email">Emailaddress:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
 
-        <label class="error"></label>
+        <p class="error"></label>
 
         <input type="submit" value="Register">
+        
         <a href="/login">Login into your account!</a>
     </form>
-
 </main>
-
 <script src='javascript/progressive.js'></script>

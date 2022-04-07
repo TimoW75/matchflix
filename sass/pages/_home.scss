@@ -1,62 +1,29 @@
-.pagina_home {
+.page-home {
+    section {
+        padding: 1em;
+    }
 
     h2 {
-        padding: 0.5em;
-        margin-left: 0.5em;
+        margin-bottom: 1em;
     }
 
-    h3 {
-        margin: 1em;
+    a.main-btn {
+        margin: 2em 0;
     }
 
-    .manage {
-        display: inline-block;
-        background-color: $btn-color;
-        border-radius: 1.8em;
-        color: $text-color_white;
-        margin-top: 0;
-        margin-bottom: 2em;
-        padding: 1em;
-        margin-left: 2em;
-    }
-
-    .change {
-        display: inline-block;
-        background-color: white;
-        border-radius: 1.8em;
-        color: $btn-color;
-        margin: 2em;
+    input.main-btn{
+        margin-left: 1em;
+        margin-bottom: 7.5em; 
         padding: 1em;
     }
 
-    .testsectie{
-        background-color: $btn-color;
-        margin-bottom: 2em;
-    }
-    .testsectie h3 {
-        padding-top: 1em;
-    }
-
-    input{
-        margin-left: 2em;
-        margin-bottom: 10em; 
-        padding: 1em;
-        background-color: $btn-color;
-        border: none;
-        color: $text-color_white;
-        border-radius: 1.8em;
-    }
-
-    .gegevens {
-        margin: 2em;
-    }
-    .gegevens p {
-        margin-bottom: 0.5em;
-    }
-    .gegevens .about {
+    .about {
         margin-top: 2em;
         text-decoration: underline;
     }
 
+    .series {
+        background-color: $bg-rose;
+    }
 }
 

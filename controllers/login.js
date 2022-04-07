@@ -4,12 +4,12 @@ const bcrypt = require('bcrypt');
 let session;
 
 // Renders the registration page when going to /register
-const inloggen = (req, res) => {
+const loginRender = (req, res) => {
   res.render('login');
 };
 
 // Login function (checks if email and password are correct & creates new session when logged in)
-const login = async (req, res) => {
+const loginFunction = async (req, res) => {
   try {
     // Searches for email in database    
     const getUser = await User.findOne({
@@ -38,6 +38,6 @@ const login = async (req, res) => {
 };
 
 module.exports = {
-  inloggen: inloggen,
-  login: login,
+  loginRender: loginRender,
+  loginFunction: loginFunction,
 };
