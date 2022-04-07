@@ -195,57 +195,52 @@ input[type=submit] {
   font-size: 1.05em;
 }
 
-.pagina_home {
-  text-align: center;
-}
-.pagina_home * {
-  margin: 0;
-  font-size: 1em;
-  color: #0c0c0c;
-  text-decoration: none;
-  font-family: Montserrat, sans-serif;
-  text-align: center;
-  justify-content: center;
-}
 .pagina_home h2 {
-  font-size: 2em;
-  margin: 1em;
+  padding: 0.5em;
+  margin-left: 0.5em;
 }
 .pagina_home h3 {
-  font-size: 1.5em;
   margin: 1em;
-}
-.pagina_home p {
-  margin: 0em;
 }
 .pagina_home .manage {
   display: inline-block;
   background-color: #c46565;
-  border-radius: 30px;
+  border-radius: 1.8em;
   color: #f5f5f5;
   margin-top: 0;
   margin-bottom: 2em;
   padding: 1em;
+  margin-left: 2em;
 }
 .pagina_home .change {
   display: inline-block;
-  background-color: #c46565;
-  border-radius: 30px;
-  color: #f5f5f5;
-  margin: 1em;
+  background-color: white;
+  border-radius: 1.8em;
+  color: #c46565;
+  margin: 2em;
   padding: 1em;
 }
+.pagina_home .testsectie {
+  background-color: #c46565;
+  margin-bottom: 2em;
+}
+.pagina_home .testsectie h3 {
+  padding-top: 1em;
+}
 .pagina_home input {
-  margin-left: 1em;
-  margin-bottom: 120px;
+  margin-left: 2em;
+  margin-bottom: 10em;
   padding: 1em;
   background-color: #c46565;
   border: none;
   color: #f5f5f5;
-  border-radius: 30px;
+  border-radius: 1.8em;
 }
 .pagina_home .gegevens {
-  margin: 3em;
+  margin: 2em;
+}
+.pagina_home .gegevens p {
+  margin-bottom: 0.5em;
 }
 .pagina_home .gegevens .about {
   margin-top: 2em;
@@ -417,9 +412,6 @@ html, body {
   margin-bottom: 175px;
 }
 
-.pagina_update {
-  text-align: center;
-}
 .pagina_update * {
   margin: 0;
   font-size: 1em;
@@ -429,29 +421,41 @@ html, body {
 .pagina_update h2 {
   font-size: 2em;
   padding: 0.5em;
+  margin-left: 0.5em;
 }
 .pagina_update fieldset {
-  margin-bottom: 1em;
-  text-align: center;
+  margin: 1em;
+  margin-left: 2em;
+  align-content: center;
 }
 .pagina_update label {
   display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
 }
 .pagina_update input {
-  border: solid 0.01em;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 90%;
+  margin-bottom: 0.5em;
 }
 .pagina_update #button {
-  margin-left: 1em;
   padding: 1em;
+  margin-left: 2em;
   background-color: #c46565;
   border-radius: 30px;
   border: none;
   color: #f5f5f5;
+  width: 30%;
 }
 .pagina_update textarea {
   width: 90%;
   resize: none;
-  border: solid 0.01em;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.pagina_update #about1 {
+  margin-top: 1em;
 }
 
 body {
@@ -557,32 +561,13 @@ input[type=submit] {
   background-size: cover;
 }
 
-.pagina_404 {
-  text-align: center;
-}
-.pagina_404 * {
-  margin: 0;
-  font-size: 1em;
-  color: #0c0c0c;
-  text-decoration: none;
-  font-family: Montserrat, sans-serif;
-  text-align: center;
-  justify-content: center;
-}
 .pagina_404 h2 {
-  font-size: 2em;
   margin: 1em;
 }
-.pagina_404 p {
-  margin: 0em;
-}
-.pagina_404 .terug {
+.pagina_404 .main_btn {
   display: inline-block;
-  background-color: #c46565;
-  border-radius: 30px;
-  color: #f5f5f5;
   margin-top: 2em;
-  padding: 1em;
+  margin-left: 2em;
 }
 
 body {
