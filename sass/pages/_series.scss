@@ -1,5 +1,5 @@
 
-.seriesGrid input:checked {
+.series-grid input:checked {
     opacity: 0.8;
     border-radius: 2em;
     background-color: $bg-color;
@@ -8,7 +8,7 @@
 }
 
 
-.seriesGrid {
+.series-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
@@ -42,7 +42,7 @@
         height: 15em;
         width: 11em;
         border-radius: 2em;
-        margin: 10px auto 10px auto;
+        margin: .5em auto .5em auto;
     }
     img{
         position: absolute;
@@ -53,11 +53,11 @@
 
 }
  
-#seriesPage{
+#series-page{
     margin-bottom: 175px;
 }
 
-#Filtermsg{
+#filtermsg{
     margin-top: 1em;
     color: var(--txt-color);
     font-size: 1.5em;
