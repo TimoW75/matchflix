@@ -4,9 +4,9 @@
   "description": "Match with people based on netflix series",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "dev": "nodemon index.js & npm run sass & gulp watch",
-    "sass": "sass --watch sass:static/styles"
+    "sass": "sass --watch sass:static/styles & gulp watch"
   },
   "repository": {
     "type": "git",
