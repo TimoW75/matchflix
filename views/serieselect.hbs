@@ -1,12 +1,14 @@
 
 <main id="seriesPage">
-<form method="post" action="series" class="seriesGrid">
 
+<h2 id="Filtermsg">Please select 1 or more styles</h2>
+
+<form method="post" action="series" class="seriesGrid">
+    
     {{#each tv_shows}} {{! voor elke item in de stijl database}}
         <section id="{{permalink}}" class="series">
             <img src="{{image_thumbnail_path}}">
             <input type="checkbox" name="serieName" id="{{permalink}}Box" value="{{permalink}}" class="checkbox">
-            <label for="{{permalink}}" class="lazy"></label>
         </section>
     {{/each}}   
 

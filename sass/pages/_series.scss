@@ -1,77 +1,71 @@
+
+.seriesGrid input:checked {
+    opacity: 0.8;
+    border-radius: 2em;
+    background-color: $bg-color;
+    border: .5em solid green;
+    margin: 0;
+}
+
+
 .seriesGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
     margin-top: 2em;
- 
 
-    section {
-        height: 15em;
-        width: 11em;
-        border-radius: 30px;
-        margin: 10px auto 10px auto;
-    }
-
-    // button{
-    input {
-        color: transparent;
-        height: 250px;
-        width: 182px;
-        appearance: none;
-        border-radius: 30px;
-        position: relative;
-    }
-
-    label {
-        color: $text-color;
-        position: relative;
-        top: -50%;
-        font-size: 1.3em;
-        font-weight: bold;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-}
-
-
-
-.seriesGrid input:checked {
-    opacity: 0.8;
-    border-radius: 30px;
-    background-color: $bg-color;
-    border: 4px solid green;
-    margin: 0;
-
-}
-
-
-.seriesGrid {
     .button {
-        height: 250px;
-        width: 250px;
-        border-radius: 150px;
+        height: 15em;
+        width: 15em;
+        border-radius: 8em;
         background-color: $btn-color;
-        position: fixed;
-        bottom: -5em;
+        position: fixed; 
         justify-self: center;
-
+        bottom: -5em;
+       
         #submit {
-            margin-top: 25px;
-            height: 50px;
+            margin-top: 1em;
             border: none;
             font-size: 1.5em;
             color: $text-color_white;       
         }
     }
-}
+        input {
+            color: transparent;
+            appearance: none;
+            position: relative;
+            height: 18em;
+            width: 182px;
+        }
+    
+    section {
+        height: 15em;
+        width: 11em;
+        border-radius: 2em;
+        margin: 10px auto 10px auto;
+    }
+    img{
+        position: absolute;
+        width: 11em;
+        height: 15em;
+        border-radius: 2em;
+    }
 
-.seriesGrid img{
-    position: absolute;
-    width: 180px;
-    height: 250px;
-    border-radius: 30px;
 }
-
+ 
 #seriesPage{
     margin-bottom: 175px;
+}
 
+#Filtermsg{
+    margin-top: 1em;
+    color: var(--txt-color);
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: underline 4px red;
+}
+
+
+.hidden{
+    display: none;
 }
