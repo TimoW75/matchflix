@@ -225,7 +225,7 @@ button {
   border: none;
 }
 
-.page-home section {
+.page-home .info {
   padding: 1em;
 }
 .page-home h2 {
@@ -341,6 +341,7 @@ html, body {
   height: 15em;
   width: 15em;
   border-radius: 8em;
+  background-color: #c46565;
   position: fixed;
   justify-self: center;
   bottom: -5em;
@@ -504,3 +505,5 @@ body {
 body {
   background-color: #ffffff;
 }
+
+/*# sourceMappingURL=main.css.map */
