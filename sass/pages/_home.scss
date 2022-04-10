@@ -7,19 +7,30 @@
         margin-bottom: 1em;
     }
 
+    h3 {
+        padding: 1em;
+        color: $text-color_white;
+    }
+
     a.main-btn {
         margin: 2em 0;
     }
 
     input.main-btn{
-        margin-left: 1em;
+        margin: 1.5em;
         margin-bottom: 7.5em; 
         padding: 1em;
+        font-size: 1em;
+    }
+
+    .alt-btn {
+        margin: 1em;
     }
 
     .about {
         margin-top: 2em;
         text-decoration: underline;
+        font-size: 1.2em;
     }
 
     .series {

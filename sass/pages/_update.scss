@@ -1,12 +1,9 @@
 .pagina_update {
-
-    // text-align: center;
     
     * {
         margin: 0;
         font-size: 1em;
         font-family: $primary-font;
-        color: $text-color;
     }
 
     h2 {
@@ -45,12 +42,9 @@
     // }
 
     #button {
-        padding: 1em;
-        //background-color: $btn-color;
-        border-radius: 30px;
         border: none;
-        color: $text-color_white;
         width: 30%;
+        margin-left: 2em;
     }
 
     textarea {
