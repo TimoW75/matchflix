@@ -39,8 +39,7 @@ const seriesSubmit = async (req, res) => {
 		})
 		await res.redirect('/')
 	}
-	serieSelectList = [req.body['serie-name']]; //Get all series on the page
-	console.log(serieSelectList)
+	serieSelectList = [req.body['serie-name']];
 	serieSelectList.forEach(show => {// for each selected show add it to the
 		const addShows = User.findOneAndUpdate({
 			email: session.email
@@ -58,5 +57,4 @@ module.exports = {
 	seriesSubmit: seriesSubmit,
 };
 
-//https://www.episodate.com/api/most-popular?page=1
-// https://www.episodate.com/api
+ // https://www.episodate.com/api
