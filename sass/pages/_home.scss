@@ -1,67 +1,40 @@
-.pagina_home {
-    text-align: center;
-
-    * {
-        margin: 0;
-        font-size: 1em;
-        color: $text-color;
-        text-decoration: none;
-        font-family: $primary-font;
-        text-align: center;
-        justify-content: center;
+.page-home {
+    .info{
+        padding: 1em;
     }
-    
 
     h2 {
-        font-size: 2em;
-        margin: 1em;
+        margin-bottom: 1em;
     }
 
     h3 {
-        font-size: 1.5em;
+        padding: 1em;
+        color: $text-color_white;
+    }
+
+    a.main-btn {
+        margin: 2em 0;
+    }
+
+    input.main-btn{
+        margin: 1.5em;
+        margin-bottom: 7.5em; 
+        padding: 1em;
+        font-size: 1em;
+    }
+
+    .alt-btn {
         margin: 1em;
     }
 
-    p {
-        margin: 0em;
-    }
-
-    .manage {
-        display: inline-block;
-        background-color: $btn-color;
-        border-radius: 30px;
-        color: $text-color_white;
-        margin-top: 0;
-        margin-bottom: 2em;
-        padding: 1em;
-    }
-
-    .change {
-        display: inline-block;
-        background-color: $btn-color;
-        border-radius: 30px;
-        color: $text-color_white;
-        margin: 1em;
-        padding: 1em;
-    }
-
-    input{
-        margin-left: 1em;
-        margin-bottom:  120px; 
-        padding: 1em;
-        background-color: $btn-color;
-        border: none;
-        color: $text-color_white;
-        border-radius: 30px;
-    }
-
-    .gegevens {
-        margin: 3em;
-    }
-    .gegevens .about {
+    .about {
         margin-top: 2em;
         text-decoration: underline;
+        font-size: 1.2em;
     }
 
+    .series {
+        background-color: $bg-rose;
+    }
 }
 

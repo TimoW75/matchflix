@@ -5,11 +5,9 @@
 @import 'base/typography';
 
 @import 'layout/navigation';
-@import 'layout/header';
-@import 'layout/footer';
 
 @import 'components/buttons';
-@import 'components/dropdown';
+@import 'components/form';
 
 @import 'pages/home';
 @import 'pages/login';
@@ -18,6 +16,5 @@
 @import 'pages/chat';
 @import 'pages/match';
 @import 'pages/404';
-
 
 @import 'themes/theme';

@@ -1,15 +1,25 @@
 // buttons
-button{
-    color: $text-color_white;
-    background-color: $btn-color;
+button {
+    color: $btn-main-text;
+    background-color: $btn-main-bg;
 }
 
-input[type=submit] {
-    background-color: rgb(196, 101, 101);
-    color: white;
+.main-btn {
+    display: inline-block;
+    background-color: $btn-main-bg;
+    border-radius: 1.8em;
+    color: $btn-main-text;
+    padding: 1em;
+    text-decoration: none;
     border: none;
-    border-radius: .8em;
-    margin-top: 2em;
-    font-weight: 600;
-    font-size: 1.05em;
+}
+
+.alt-btn {
+    display: inline-block;
+    background-color: $btn-alt-bg;
+    border-radius: 1.8em;
+    color: $btn-alt-text;
+    padding: 1em;
+    text-decoration: none;
+    border: none;
 }
