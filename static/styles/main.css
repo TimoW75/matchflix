@@ -231,17 +231,26 @@ button {
 .page-home h2 {
   margin-bottom: 1em;
 }
+.page-home h3 {
+  padding: 1em;
+  color: #ffffff;
+}
 .page-home a.main-btn {
   margin: 2em 0;
 }
 .page-home input.main-btn {
-  margin-left: 1em;
+  margin: 1.5em;
   margin-bottom: 7.5em;
   padding: 1em;
+  font-size: 1em;
+}
+.page-home .alt-btn {
+  margin: 1em;
 }
 .page-home .about {
   margin-top: 2em;
   text-decoration: underline;
+  font-size: 1.2em;
 }
 .page-home .series {
   background-color: #c46565;
@@ -388,40 +397,45 @@ html, body {
   display: none;
 }
 
-.pagina_update {
-  text-align: center;
-}
 .pagina_update * {
   margin: 0;
   font-size: 1em;
   font-family: Montserrat, sans-serif;
-  color: #0c0c0c;
 }
 .pagina_update h2 {
   font-size: 2em;
   padding: 0.5em;
+  margin-left: 0.5em;
 }
 .pagina_update fieldset {
-  margin-bottom: 1em;
-  text-align: center;
+  margin: 1em;
+  margin-left: 2em;
+  align-content: center;
 }
 .pagina_update label {
   display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
 }
 .pagina_update input {
-  border: solid 0.01em;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 90%;
+  margin-bottom: 0.5em;
 }
 .pagina_update #button {
-  margin-left: 1em;
-  padding: 1em;
-  border-radius: 30px;
   border: none;
-  color: #ffffff;
+  width: 30%;
+  margin-left: 2em;
 }
 .pagina_update textarea {
   width: 90%;
   resize: none;
-  border: solid 0.01em;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.pagina_update #about1 {
+  margin-top: 1em;
 }
 
 body {
@@ -489,11 +503,9 @@ body {
 }
 .page-404 .main-btn {
   margin-top: 2em;
-  padding: 1em;
+  margin-left: 2em;
 }
 
 body {
   background-color: #ffffff;
 }
-
-/*# sourceMappingURL=main.css.map */

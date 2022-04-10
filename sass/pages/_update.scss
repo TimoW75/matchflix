@@ -1,45 +1,62 @@
 .pagina_update {
-
-    text-align: center;
     
     * {
         margin: 0;
         font-size: 1em;
         font-family: $primary-font;
-        color: $text-color;
     }
 
     h2 {
         font-size: 2em;
         padding: 0.5em;
+        margin-left: 0.5em;
     }
 
     fieldset {
-        margin-bottom: 1em;
-        text-align: center;
+        margin: 1em;
+        margin-left: 2em;
+        align-content: center;
     }
 
     label {
         display: block;
+        margin-bottom: 0.5em;
+        font-size: 1.2em;
     }
 
     input {
-        border: solid 0.01em;
+        border: none;
+        border-bottom: 1px solid black;
+        width: 90%;
+        margin-bottom: 0.5em;
+        // border: solid 0.01em black;
+        // border-radius: 1.8em;
     }
 
+    // #name, #age, #gender, #email {
+    //     padding-left: 0.5em;
+    //     height: 2em;
+    // }
+    // #about {
+    //     padding-left: 1em;
+    // }
+
     #button {
-        margin-left: 1em;
-        padding: 1em;
-        //background-color: $btn-color;
-        border-radius: 30px;
         border: none;
-        color: $text-color_white;
+        width: 30%;
+        margin-left: 2em;
     }
 
     textarea {
         width: 90%;
         resize: none;
-        border: solid 0.01em;
-
+        // border: solid 0.01em black;
+        // border-radius: 30px;
+        border: none;
+        border-bottom: 1px solid black;
     }
+
+    #about1 {
+        margin-top: 1em;
+      }
 }
