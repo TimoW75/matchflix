@@ -15,14 +15,11 @@ shows.forEach(element => {
             }
             else{}; // anders stijl naar beneden}
             })
-            check();
+            check();                                                   
         })
     console.log(checkedStyles)
     checkedStyles = 0
 })
-
-
-
 
 
 
