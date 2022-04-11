@@ -1,49 +1,66 @@
-// .match-container{
-//     display: flex;
-//     justify-content: center;
-//     position: relative;
-//     top: 1rem;
+.match-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 1rem;
+    padding: 1em;
 
-//     .person{
-//         max-width: 80vw;
-//     }
+    section:last-of-type {
+        display: flex;
 
-//     .person-name{
-//         font-weight: 700;
-//         font-size: 2rem;
-//     }
-//     li{
-//         margin: 0.2rem;
-//     }
+        form {
+            input[type=submit] {
+                font-size: 1em;
+                font-weight: 600;
+                padding: .75em;
+                width: 7em;
+                border-radius: .5em;
+                border: none;
+                color: rgba(0,0,0,0.8);
+            } 
+        }
 
-//     form{
-//         margin: 1.5rem 0.5rem 1.5rem 0.5rem;
-//     }
-// }
-// input[type="submit"]{
-//     margin-top: 0;
-// }
+        form:first-of-type {
+            input[type=submit] {
+                background-color: #db503b;
+            }
+        }
 
-// .like-choice_btn{
-//     padding: 1rem;
-//     width: 6rem;
-// }
+        form:last-of-type {
+            input[type=submit] {
+                background-color: #52d63b;
+            }
+        }
+    }
 
+    .person-name{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    li{
+        margin: 0.2rem;
+    }
 
-// .match-series {
-//     display: flex;
-//     margin: auto;
-//     text-align: center;
-//     margin-top: 25px;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     max-width: 80vw;
+    form{
+        margin: 1.5rem 0.5rem 1.5rem 0.5rem;
+    }
+}
 
-//     section{
-//         height: 139px;
-//         width: 100px;
-//         border-radius: 1rem;
-//         margin: 0.4rem;
-//         background-size: cover;
-//     }
-// }
+.match-series {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80vw;
+
+    section{
+        height: 139px;
+        width: 100px;
+        border-radius: 1rem;
+        margin: 0.4rem;
+        background-size: cover;
+    }
+}

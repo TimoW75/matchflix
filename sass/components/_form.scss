@@ -1,1 +1,23 @@
-// dropdown
+// Forms
+label {
+    display: block;
+    margin-bottom: .25em;
+    font-size: 1.2em;
+}
+
+input, select {
+    font-family: $primary-font; 
+    display: block;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 2.5em;
+    padding: 0.5em;
+}
+
+input[type=submit] {
+    height: unset;
+}
+
+input[hidden] {
+    display: none;
+}

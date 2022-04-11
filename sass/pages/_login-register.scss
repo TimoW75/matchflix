@@ -3,23 +3,34 @@ html, body {
     height: 100%;
 }
 
-.pagina_login {
+.login-register {
     height: 100%;
     background: rgb(120,13,13);
     background: linear-gradient(0deg, rgba(120,13,13,1) 0%, rgba(196,101,101,1) 100%);
     background-attachment: fixed;
 
-    .errorcss {
+    .error {
         display: block;
-        background: red;
+        background: rgb(255, 77, 77);
         color: white;
         text-align: center;
-        width: 80%;
-        border-radius: 2em;
+        border-radius: .5em;
         padding: 0.5em;
         margin: 1em;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .foute-input {
+        border-bottom: 1px solid rgb(255, 77, 77);
+    }
+
+    input[type=submit] {
+        border: none;
     }
 
     h1 { 
@@ -44,38 +55,6 @@ html, body {
 
     .register {
         height: 100%;
-    }
-
-    input {
-        width: 100%;
-        font-family: $primary-font;
-        box-sizing: border-box;
-        margin-bottom: 1em;
-        height: 3em;
-        border: 1px solid rgb(184, 184, 184);
-        border-radius: 2em;
-        padding: 1em;
-    }
-
-    label {
-        display: block;
-        font-size: 1.2em;
-        font-weight: 400;
-    }
-
-    section {
-        display: flex;
-        align-items: center;
-
-        input[type=radio] {
-            width: unset;
-            margin: unset;
-            margin-right: .5em;
-        }
-    }
-
-    section:not(:first-of-type) {
-        margin-bottom: 2em;
     }
 
     a {

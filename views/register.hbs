@@ -1,4 +1,4 @@
-<main class="pagina_login">
+<main class="login-register">
     <h1>Register</h1>
     <form action="/register" class="pe register" method="post">
         <label for="name">Name:</label>
@@ -20,11 +20,14 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password">
 
-        <p class="error"></label>
+        <label for="password-check">Confirm your password:</label>
+        <input type="password" id="password-check" name="password-check">
 
-        <input type="submit" value="Register">
+        <p class="error hidden"></p>
+
+        <input class="main-btn" type="submit" value="Register">
         
         <a href="/login">Login into your account!</a>
     </form>
 </main>
-<script src='javascript/progressive.js'></script>
+<script src='javascript/register.js'></script>
