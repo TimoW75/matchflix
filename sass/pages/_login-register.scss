@@ -11,11 +11,10 @@ html, body {
 
     .error {
         display: block;
-        background: red;
+        background: rgb(255, 77, 77);
         color: white;
         text-align: center;
-        width: 80%;
-        border-radius: 2em;
+        border-radius: .5em;
         padding: 0.5em;
         margin: 1em;
         margin-right: auto;
@@ -27,7 +26,11 @@ html, body {
     }
 
     .foute-input {
-        border: 1px solid red;
+        border-bottom: 1px solid rgb(255, 77, 77);
+    }
+
+    input[type=submit] {
+        border: none;
     }
 
     h1 { 
@@ -52,28 +55,6 @@ html, body {
 
     .register {
         height: 100%;
-    }
-
-    input, select {
-        width: 100%;
-        font-family: $primary-font;
-        box-sizing: border-box;
-        margin-bottom: 1em;
-        height: 3em;
-        border: 1px solid rgb(184, 184, 184);
-        border-radius: 2em;
-        padding: 1em;
-    }
-
-    select {
-        padding: 0 1em;
-    }
-
-    label {
-        display: block;
-        font-size: 1.2em;
-        font-weight: 400;
-        margin: 0.5em 0;
     }
 
     a {

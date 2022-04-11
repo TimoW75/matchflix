@@ -1,21 +1,22 @@
 <main>
     <div class="match-container">
-        <form action="/dislike" method="post">
-                    <input type="text" value="{{name}}" name="dislike" hidden>
-            <input type="submit" value="Dislike" class="like-choice_btn">
-        </form>
-        <section class="person">
+        <section>
             <ul>
                 <li class="person-name">{{name}}</li>
                 <li class="person-age">Age: {{age}}</li>
                 <li class="person-about">{{about}}</li>
             </ul>
         </section>
-        <form action="/like" method="post">
-            <input type="text" value="{{name}}" name="like" hidden>
-            <input type="submit" value="Like" class="like-choice_btn">
-        </form>
-
+        <section>
+            <form action="/dislike" method="post">
+                <input type="text" value="{{name}}" name="dislike" hidden>
+                <input type="submit" value="Dislike" class="like-choice_btn">
+            </form>
+            <form action="/like" method="post">
+                <input type="text" value="{{name}}" name="like" hidden>
+                <input type="submit" value="Like" class="like-choice_btn">
+            </form>
+        </section>
     </div>
     <ul class="match-series">
         {{#each shows}} {{! voor elke item in de shows database}}
@@ -24,7 +25,6 @@
         </li>
         {{/each}}
     </ul>
-
 </main>
 
 {{>footer}}
