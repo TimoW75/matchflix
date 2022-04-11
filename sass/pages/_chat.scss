@@ -6,7 +6,7 @@
 	right: 0;
 	display: flex;
 	height: 3rem;
-	background-color: #F7F7F7;
+	background-color: $input-form;
 	>button {
 		border: none;
 		padding: 0 1rem;
@@ -26,31 +26,38 @@
 	}
 }
 .topBar {
-	background: #c46565;
+	background: $btn-main-bg;
 	height: 3em;
-	border-bottom: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
 }
 #messages {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	right: 0;
-	>li {
-		padding: 0.5rem 1rem;
-		color: white;
-		background-color: #333333;
-		border-radius: 1rem 1rem 0 1rem;
-		margin-bottom: 1rem;
-	}
 	position: fixed;
 	bottom: 150px;
 	overflow-y: scroll;
+	width: 100%;
+	>li {
+		padding: 0.5rem 1rem;
+		color: $text-color;
+		background-color: $odd-message;
+		margin-bottom: 0.5rem;
+		&:nth-child(even) {
+			background-color: $even-message;
+			text-align: end;
+		}
+	}
 }
+
 
 .chatBar{
 	margin-bottom: 100px;
 
 	input{
-		background-color: #d8d8d8;
+		background-color: $input-color;
 	}
 }
