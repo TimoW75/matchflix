@@ -1,4 +1,4 @@
-<main class="pagina_login">
+<main class="login-register">
     <h1>Login</h1>
     <form action="/login" class="pe login" method="post">
         <label for="email">Emailaddress:</label>
@@ -7,11 +7,11 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password">
 
-        <p class="error"></label>
+        <p class="error hidden"></p>
 
-        <input type="submit" value="Login">
+        <input class="main-btn" type="submit" value="Login">
         
         <a href="/register">Create a new account!</a>
     </form>
 </main>
-<script src='javascript/progressive.js'></script>
+<script src='javascript/login.js'></script>
