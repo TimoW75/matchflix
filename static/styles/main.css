@@ -260,13 +260,13 @@ html, body {
   height: 100%;
 }
 
-.pagina_login {
+.login-register {
   height: 100%;
   background: #780d0d;
   background: linear-gradient(0deg, #780d0d 0%, #c46565 100%);
   background-attachment: fixed;
 }
-.pagina_login .errorcss {
+.login-register .error {
   display: block;
   background: red;
   color: white;
@@ -278,27 +278,33 @@ html, body {
   margin-right: auto;
   margin-left: auto;
 }
-.pagina_login h1 {
+.login-register .hidden {
+  display: none;
+}
+.login-register .foute-input {
+  border: 1px solid red;
+}
+.login-register h1 {
   font-size: 3em;
   font-weight: 600;
   color: white;
   text-align: center;
   padding: 1.5em 0;
 }
-.pagina_login form {
+.login-register form {
   display: flex;
   flex-direction: column;
   background-color: white;
   padding: 2.5em 1em 1em 1em;
   box-sizing: border-box;
 }
-.pagina_login .login {
+.login-register .login {
   height: calc(100% - 192px);
 }
-.pagina_login .register {
+.login-register .register {
   height: 100%;
 }
-.pagina_login input {
+.login-register input, .login-register select {
   width: 100%;
   font-family: Montserrat, sans-serif;
   box-sizing: border-box;
@@ -308,24 +314,16 @@ html, body {
   border-radius: 2em;
   padding: 1em;
 }
-.pagina_login label {
+.login-register select {
+  padding: 0 1em;
+}
+.login-register label {
   display: block;
   font-size: 1.2em;
   font-weight: 400;
+  margin: 0.5em 0;
 }
-.pagina_login section {
-  display: flex;
-  align-items: center;
-}
-.pagina_login section input[type=radio] {
-  width: unset;
-  margin: unset;
-  margin-right: 0.5em;
-}
-.pagina_login section:not(:first-of-type) {
-  margin-bottom: 2em;
-}
-.pagina_login a {
+.login-register a {
   display: block;
   text-align: center;
   color: black;
@@ -511,5 +509,3 @@ html, body {
 body {
   background-color: #ffffff;
 }
-
-/*# sourceMappingURL=main.css.map */

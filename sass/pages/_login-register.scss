@@ -3,13 +3,13 @@ html, body {
     height: 100%;
 }
 
-.pagina_login {
+.login-register {
     height: 100%;
     background: rgb(120,13,13);
     background: linear-gradient(0deg, rgba(120,13,13,1) 0%, rgba(196,101,101,1) 100%);
     background-attachment: fixed;
 
-    .errorcss {
+    .error {
         display: block;
         background: red;
         color: white;
@@ -20,6 +20,14 @@ html, body {
         margin: 1em;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .foute-input {
+        border: 1px solid red;
     }
 
     h1 { 
@@ -46,7 +54,7 @@ html, body {
         height: 100%;
     }
 
-    input {
+    input, select {
         width: 100%;
         font-family: $primary-font;
         box-sizing: border-box;
@@ -57,25 +65,15 @@ html, body {
         padding: 1em;
     }
 
+    select {
+        padding: 0 1em;
+    }
+
     label {
         display: block;
         font-size: 1.2em;
         font-weight: 400;
-    }
-
-    section {
-        display: flex;
-        align-items: center;
-
-        input[type=radio] {
-            width: unset;
-            margin: unset;
-            margin-right: .5em;
-        }
-    }
-
-    section:not(:first-of-type) {
-        margin-bottom: 2em;
+        margin: 0.5em 0;
     }
 
     a {
