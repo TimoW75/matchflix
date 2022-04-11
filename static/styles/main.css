@@ -373,6 +373,7 @@ html, body {
   position: relative;
   height: 18em;
   width: 13.3em;
+  border: none;
 }
 .series-grid section {
   height: 15em;
