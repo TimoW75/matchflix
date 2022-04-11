@@ -477,24 +477,30 @@ html, body {
 .topBar {
   background: #c46565;
   height: 3em;
-  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
 }
 
 #messages {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  right: 0;
   position: fixed;
   bottom: 150px;
   overflow-y: scroll;
+  width: 100%;
 }
 #messages > li {
   padding: 0.5rem 1rem;
-  color: white;
-  background-color: #333333;
-  border-radius: 1rem 1rem 0 1rem;
-  margin-bottom: 1rem;
+  color: #0c0c0c;
+  background-color: #808080;
+  margin-bottom: 0.5rem;
+}
+#messages > li:nth-child(even) {
+  background-color: #D3D3D3;
+  text-align: end;
 }
 
 .chatBar {
