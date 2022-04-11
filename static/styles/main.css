@@ -438,10 +438,6 @@ html, body {
   margin-top: 1em;
 }
 
-body {
-  margin: 0;
-}
-
 #form {
   padding: 0.7rem;
   position: fixed;
@@ -469,6 +465,12 @@ body {
 }
 #input:focus {
   outline: none;
+}
+
+.topBar {
+  background: #c46565;
+  height: 3em;
+  border-bottom: 2px solid black;
 }
 
 #messages {
@@ -509,3 +511,5 @@ body {
 body {
   background-color: #ffffff;
 }
+
+/*# sourceMappingURL=main.css.map */

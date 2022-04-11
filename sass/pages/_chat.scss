@@ -1,6 +1,3 @@
-body {
-	margin: 0;
-}
 #form {
 	padding: 0.7rem;
 	position: fixed;
@@ -27,6 +24,11 @@ body {
 	&:focus {
 		outline: none;
 	}
+}
+.topBar {
+	background: #c46565;
+	height: 3em;
+	border-bottom: 2px solid black;
 }
 #messages {
 	list-style-type: none;
