@@ -372,7 +372,7 @@ html, body {
   appearance: none;
   position: relative;
   height: 18em;
-  width: 182px;
+  width: 13.3em;
 }
 .series-grid section {
   height: 15em;
@@ -388,7 +388,7 @@ html, body {
 }
 
 #series-page {
-  margin-bottom: 175px;
+  margin-bottom: 11em;
 }
 
 #filtermsg {
